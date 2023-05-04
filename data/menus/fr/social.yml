@@ -9,4 +9,8 @@ items:
   target: https://www.linkedin.com/company/noesyacoop
   kind: url
   children: []
+- title: contact@noesya.coop
+  target: mailto:contact@noesya.coop
+  kind: url
+  children: []
 

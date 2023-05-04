@@ -1,0 +1,27 @@
+.categories__term .posts--list
+    .post 
+        border: none
+        .post-content
+            grid-column: 1/13
+        a
+            @include h2
+            @include link($color-accent)
+        .post-meta time
+            @include h2
+            color: inherit
+            font-family: $body-font-family
+
+.posts__page 
+    header.hero
+        .post-categories li a
+            @include h1
+            color: $color-text-alt
+            text-decoration: none
+        h1
+            margin-top: $spacing1
+    .blocks 
+        @include media-breakpoint-up(desktop)
+            .block-content
+                padding-left: 0 !important
+                padding-right: 0
+                width: col(8)

@@ -1,0 +1,34 @@
+{{- $sizes := site.Params.image_sizes.sections.posts.hero_single -}}
+{{- $image := .Params.image -}}
+{{- $title := .Title -}}
+
+{{- $direction := "" -}}
+{{- $breadcrumb_is_after_hero := eq site.Params.breadcrumb.position "after-hero"  -}}
+{{ if $image }}
+  {{- $direction = partial "GetImageDirection" $image -}}
+{{ end }}
+
+<header class="hero {{ if $image -}}hero--with-image hero--image-{{- $direction -}}{{- end }} {{ if $breadcrumb_is_after_hero -}} hero--no-margin {{- end }}">
+  <div class="container">
+    <div class="content">
+      {{ if .Params.Categories }}
+        {{ partial "posts/categories.html" . }}
+    {{ end }}
+      <h1>{{ partial "PrepareHTML" $title }}</h1>
+      
+    </div>
+    {{- if eq site.Params.breadcrumb.position "hero-end" -}}
+      {{- if .breadcrumb | default true -}}
+        {{ partial "header/breadcrumbs.html" .context }}
+      {{- end -}}
+    {{- end -}}
+  </div>
+</header>
+
+{{- if $breadcrumb_is_after_hero -}}
+  {{- if .breadcrumb | default true -}}
+    <div class="container breadcrumb-container">
+      {{ partial "header/breadcrumbs.html" .context }}
+    </div>
+  {{- end -}}
+{{- end -}}

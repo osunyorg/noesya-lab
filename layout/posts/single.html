@@ -1,0 +1,23 @@
+{{ define "main" }}
+  
+  {{ partial "posts/hero-single.html" . }}
+
+  <div class="document-content" itemscope itemtype="https://schema.org/NewsArticle">
+    <meta itemprop="headline" content="{{ partial "PrepareHTML" .Title }}">
+    <meta itemprop="url" content="{{ .Permalink }}">
+    {{ if .Date }}<meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04" }}">{{ end }}
+    {{ if .Params.summary }}<meta itemprop="abstract" content="{{ partial "PrepareText" .Params.summary }}">{{ end }}
+    {{ if .Summary }}<meta itemprop="description" content="{{ partial "PrepareText" .Summary }}">{{ end }}
+
+    {{ partial "posts/summary.html" (dict
+        "context" .
+        "block_wrapped" true
+      ) }}
+
+    {{ partial "blocks/list.html" . }}
+
+    {{ partial "posts/prevnext.html" . }}
+
+    {{ partial "hooks/before-document-content-end.html" . }}
+  </div>
+{{ end }}

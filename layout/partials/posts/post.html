@@ -1,0 +1,22 @@
+{{ $post := .post }}
+{{ $heading := .heading | default "h2" }}
+{{ $heading_tag := (dict 
+    "open" ((printf "<%s itemprop='headline'>" $heading) | safeHTML)
+    "close" ((printf "</%s>" $heading) | safeHTML)
+    ) }}
+
+{{ with $post }}
+  <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="post-content">
+      {{- $title := partial "PrepareHTML" .Title -}}
+
+      {{ $heading_tag.open }}
+        <a href="{{ .Permalink }}" title="{{ safeHTML (i18n "commons.more_aria" (dict "Title" $title)) }}">{{ $title }}</a>
+      {{ $heading_tag.close }}
+      
+      <div class="post-meta">
+        <time itemprop="datePublished" datetime="{{ .Date.Format "2006" }}">{{ .Date.Format "2006" }}</time>
+      </div>
+    </div>
+  </article>
+{{ end }}

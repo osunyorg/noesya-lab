@@ -10,7 +10,6 @@
             @include h2
             color: inherit
             font-family: $body-font-family
-
 .posts__page 
     header.hero
         .post-categories li a
@@ -25,3 +24,9 @@
                 padding-left: 0 !important
                 padding-right: 0
                 width: col(8)
+
+@media (prefers-color-scheme: dark)
+    .categories__term .posts--list .post a
+        @include link(white)
+        .has-menu-opened &
+            @include link($color-accent)

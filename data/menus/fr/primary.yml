@@ -1,8 +1,4 @@
 ---
 title: Menu principal
-items:
-- title: Masterclass
-  target: "/masterclass/"
-  kind: page
-  children: []
+items: []
 

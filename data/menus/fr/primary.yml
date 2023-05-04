@@ -9,4 +9,8 @@ items:
   target: "/masterclass/"
   kind: page
   children: []
+- title: Points de vue
+  target: "/points-de-vue/"
+  kind: page
+  children: []
 

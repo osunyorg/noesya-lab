@@ -1,10 +1,6 @@
 ---
 title: Menu principal
 items:
-- title: R&D
-  target: "/rd/"
-  kind: page
-  children: []
 - title: Masterclass
   target: "/masterclass/"
   kind: page

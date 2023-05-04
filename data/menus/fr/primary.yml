@@ -2,8 +2,8 @@
 title: Menu principal
 items:
 - title: R&D
-  target: "/rd/"
-  kind: page
+  target: "/actualites/rd/"
+  kind: category
   children: []
 - title: Masterclass
   target: "/actualites/masterclass/"

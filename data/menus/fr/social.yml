@@ -1,4 +1,8 @@
 ---
 title: Liens sociaux
-items: []
+items:
+- title: Twitter
+  target: https://twitter.com/noesya_coop
+  kind: url
+  children: []
 

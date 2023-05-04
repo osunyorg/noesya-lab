@@ -4,7 +4,6 @@
     "open" ((printf "<%s itemprop='headline'>" $heading) | safeHTML)
     "close" ((printf "</%s>" $heading) | safeHTML)
     ) }}
-
 {{ with $post }}
   <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post-content">

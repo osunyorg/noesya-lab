@@ -5,4 +5,8 @@ items:
   target: https://twitter.com/noesya_coop
   kind: url
   children: []
+- title: Linkedin
+  target: https://www.linkedin.com/company/noesyacoop
+  kind: url
+  children: []
 

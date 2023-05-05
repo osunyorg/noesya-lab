@@ -10,6 +10,8 @@ main:not(.page-with-blocks)
         background-attachment: fixed
         h1
             font-size: px2rem(55)
+.nav-accessibility a
+    color: white
 .posts__section,
 .categories__term,
 .authors__term,
@@ -77,6 +79,8 @@ footer#document-footer
     opacity: 1
 
 @media (prefers-color-scheme: dark)
+    .nav-accessibility a
+        color: $color-accent
     .categories__term .posts--list .post a
         @include link(white)
         .has-menu-opened &

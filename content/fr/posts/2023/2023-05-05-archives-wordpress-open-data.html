@@ -77,6 +77,30 @@ blocks:
         
 
 
+  - template: chapter
+    title: >-
+      Approche technique
+    position: 3
+    data:
+      layout: no_background
+      text: >-
+        <p>Un plugin WordPress serait la solution parfaite pour gérer les exports au long cours. Il faudrait lui indiquer les paramètres d'export, et le lancer ponctuellement ou automatiquement pour qu'il fasse le traitement.</p><p>Les données textuelles seraient publiées sur Gitlab, ce qui permet de les versionner et de les traiter simplement. Les formats markdown ou JSON semblent pertinents.</p><p>Les données visuelles seraient envoyées sur un Object Storage Scaleway, en prenant soin d'envoyer uniquement les images originales. Les variantes pourraient être générées par un CDN (KeyCDN fonctionne très bien avec Osuny).</p><p>Un format HTML permettant une navigation simple dans les archives serait intéressant. Cette génération HTML peut se faire dans l'export, ou bien se faire dans une seconde passe, avec un site statique généré depuis les données.<br></p>
+
+
+      notes: >-
+        
+
+
+
+
+      alt: >-
+        
+
+
+      credit: >-
+        
+
+
 
 
 ---

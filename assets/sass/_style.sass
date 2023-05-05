@@ -52,8 +52,11 @@ main:not(.page-with-blocks)
 .organizations__section
     .organizations
         @include grid(4)
-.organizations
-    column-gap: $grid-gutter !important
+.organizations,
+.block-partners--grid .grid.organizations
+    @include in-page-with-or-without-sidebar
+        @include media-breakpoint-up(desktop)
+            grid-column-gap: $grid-gutter !important
     .organization 
         h3, h2
             @include h4

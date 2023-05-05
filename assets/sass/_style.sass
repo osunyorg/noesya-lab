@@ -7,13 +7,15 @@
         background-attachment: fixed
         h1
             font-size: px2rem(55)
-    
+.posts__section,
+.categories__term,
+.authors__term
+    .posts--list article .post-content
+        grid-column: 1/13
+        margin-left: 0
 .categories__term .posts--list
     .post 
         border: none
-        .post-content
-            grid-column: 1/13
-            margin-left: 0
         a
             @include h2
             @include link($color-accent)

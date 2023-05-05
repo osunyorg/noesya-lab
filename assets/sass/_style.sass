@@ -46,10 +46,12 @@
                 .organization h3
                     @include h4
                     font-family: $body-font-family
+                    margin-top: $spacing0
                     a::after
                         vertical-align: baseline
                 .media 
                     aspect-ratio: 1
+                    filter: grayscale(1)
                     picture img
                         height: 50%
                         margin-left: 50%
@@ -59,7 +61,6 @@
             .block:last-of-type
                 padding-bottom: $spacing5
 
-            
 header.hero
     @include media-breakpoint-up(desktop)
         .content > h1

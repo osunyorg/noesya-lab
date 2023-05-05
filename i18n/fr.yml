@@ -1,0 +1,8 @@
+pages:
+  posts: Publications
+persons:
+  posts: Publications récentes
+posts:
+  see_all: Voir toutes les publications
+  see_all_in_category: Voir toutes les publications “{{ .Title }}”
+  title: Publications

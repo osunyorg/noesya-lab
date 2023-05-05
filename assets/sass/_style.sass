@@ -1,3 +1,6 @@
+main,
+main:not(.page-with-blocks)
+    padding-bottom: $spacing5
 .page__home main
     background:
         image: url("/assets/images/crop.png")
@@ -9,7 +12,8 @@
             font-size: px2rem(55)
 .posts__section,
 .categories__term,
-.authors__term
+.authors__term,
+.persons__page
     .posts--list article .post-content
         grid-column: 1/13
         margin-left: 0
@@ -43,26 +47,27 @@
                 margin-bottom: $spacing2
             .block-partners--grid .block-content
                 width: 100%
-                .organizations
-                    column-gap: $grid-gutter !important
-                .organization h3
-                    @include h4
-                    font-family: $body-font-family
-                    margin-top: $spacing0
-                    a::after
-                        vertical-align: baseline
-                .media 
-                    aspect-ratio: 1
-                    filter: grayscale(1)
-                    picture img
-                        height: 50%
-                        margin-left: 50%
-                        margin-top: 50%
-                        transform: translate(-50%, -50%)
-                        width: 50%
-            .block:last-of-type
-                padding-bottom: $spacing5
-
+.organizations__section
+    .organizations
+        @include grid(4)
+.organizations
+    column-gap: $grid-gutter !important
+    .organization 
+        h3, h2
+            @include h4
+            font-family: $body-font-family
+            margin-top: $spacing0
+            a::after
+                vertical-align: baseline
+        .media 
+            aspect-ratio: 1
+            filter: grayscale(1)
+            picture img
+                height: 50%
+                margin-left: 50%
+                margin-top: 50%
+                transform: translate(-50%, -50%)
+                width: 50%
 header.hero
     @include media-breakpoint-up(desktop)
         .content > h1

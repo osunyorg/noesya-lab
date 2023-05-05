@@ -39,6 +39,27 @@
                 width: col(8)
             .top
                 margin-bottom: $spacing2
+            .block-partners--grid .block-content
+                width: 100%
+                .organizations
+                    column-gap: $grid-gutter !important
+                .organization h3
+                    @include h4
+                    font-family: $body-font-family
+                    a::after
+                        vertical-align: baseline
+                .media 
+                    aspect-ratio: 1
+                    picture img
+                        height: 50%
+                        margin-left: 50%
+                        margin-top: 50%
+                        transform: translate(-50%, -50%)
+                        width: 50%
+            .block:last-of-type
+                padding-bottom: $spacing5
+
+            
 header.hero
     @include media-breakpoint-up(desktop)
         .content > h1

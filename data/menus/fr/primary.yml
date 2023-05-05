@@ -2,15 +2,15 @@
 title: Menu principal
 items:
 - title: R&D
-  target: "/actualites/rd/"
+  target: "/publications/rd/"
   kind: category
   children: []
 - title: Masterclass
-  target: "/actualites/masterclass/"
+  target: "/publications/masterclass/"
   kind: category
   children: []
 - title: Points de vue
-  target: "/actualites/points-de-vue/"
+  target: "/publications/points-de-vue/"
   kind: category
   children: []
 

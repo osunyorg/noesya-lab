@@ -7,3 +7,6 @@ deployment:
   targets:
     - name: "production"
       URL: "s3://014475590ce92a696058830a458ff9f03be045d9af576b12e49d2515aef65f83?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
+
+params:
+  ecosystem: lab

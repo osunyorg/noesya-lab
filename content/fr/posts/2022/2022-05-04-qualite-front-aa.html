@@ -8,7 +8,7 @@ full_width: false
 design:
   full_width: false
   toc:
-    present: true
+    present: false
     offcanvas: false
 
 authors:
@@ -25,6 +25,61 @@ summary: >
   
 description_short: >
   
+
+contents:
+  - kind: block
+    template: chapter
+    title: >
+      AA (qualité intermédiaire)
+    position: 1
+    data:
+      layout: no_background
+      text: >-
+        <p><i>Description</i></p><p>Utilisation limitée de Bootstrap :</p><ul> <li>pas d'utilities ("my-3", "pb-1"...)</li> <li>utiliser les mixins sass de bootstrap (attention aux classes utilisées par le js de bootstrap)</li> <li>limiter les classes, par exemple, favoriser les "row-columns" au lieux des "cols" permet de n'écrire qu'une fois la règle de colonage lorsque que ces dernières sont de même largeurs</li> </ul><p><a href="http://schema.org/">Schema.org</a> et balises signifiantes</p><p>Purge CSS pour alléger</p><p>Caractéristiques :</p><p><i>Exemple de contextes</i></p><ul> <li>Bootstrap avec plein de balises de style</li> <li>Pour les back-offices, thème Bootstrap d'admin</li> </ul><p><i>Avantages</i></p><p>rapide, stable, SEO</p><p><i>Inconvénients</i></p><p>...</p><p><i>Exemple d'un menu avec bootstrap</i></p>
+
+
+      notes: >-
+        
+
+
+
+
+      alt: >-
+        
+
+
+      credit: >-
+        
+
+
+
+
+  - kind: block
+    template: chapter
+    title: >
+      Exemple d’un menu avec bootstrap
+    position: 2
+    data:
+      layout: alt_background
+      text: >-
+        <p>&lt;nav class="navbar navbar-expand-lg" id="navigation" aria-label="Menu principal"&gt;<br>   &lt;div class="container"&gt;<br>       &lt;a class="navbar-brand" href="https://bordeauxmontaigne-iut.netlify.app/"&gt;<br>           &lt;img src="/assets/images/logo.svg" alt="IUTBordeauxMontaigne" height="42" width="147"&gt;<br>       &lt;/a&gt;<br>       &lt;button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" *aria-controls="navbarNavDropdown" aria-expanded="false" aria-label=""&gt;<br>           &lt;span class="navbar-toggler-text"&gt;Menu&lt;/span&gt;<br>           &lt;span class="navbar-toggler-icon"&gt;<br>           &lt;/span&gt;<br>       &lt;/button&gt;<br>       &lt;div class="collapse navbar-collapse" id="navbarNavDropdown"&gt;<br>           &lt;ul class="navbar-nav nav-level-1"&gt;<br>               &lt;li class="nav-item"&gt; &lt;a href="/actualites/" class="nav-link"&gt;Actualités&lt;/a&gt;<br>               &lt;/li&gt;<br>               &lt;li class="nav-item has-children dropdown"&gt;&lt;a href="/notre-institut/" class="nav-link dropdown-toggle"  id="dropdown-notre-institut" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Notre institut&lt;/a&gt;<br>                   &lt;div class="dropdown-menu" aria-labelledby="dropdown-notre-institut"&gt;<br>                       &lt;ul class="nav-level-2"&gt;<br>                           &lt;li class="nav-item"&gt;<br>                               &lt;a href="/notre-institut/presentation-de-liut/" class="nav-link"&gt;Présentation de l'IUT&lt;/a&gt;<br>                           &lt;/li&gt;<br>                           &lt;li class="nav-item"&gt;<br>                               &lt;a href="/notre-institut/relations-avec-les-entreprises/" class="nav-link"&gt;Relations  avec les entreprises&lt;/a&gt;<br>                           &lt;/li&gt;<br>                            [...]<br>                       &lt;/ul&gt;<br>                   &lt;/div&gt;<br>               &lt;/li&gt;<br>               &lt;li class="nav-item has-children dropdown"&gt;<br>                   &lt;a href="/offre-de-formation/" class="nav-link dropdown-toggle" id="dropdown-offre-de-formation" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;Offre de formation&lt;/a&gt;<br>                   &lt;div class="dropdown-menu" aria-labelledby="dropdown-offre-de-formation"&gt;<br>                       &lt;ul class="nav-level-2"&gt;<br>                           &lt;li class="nav-item"&gt;<br>                               &lt;a href="/offre-de-formation/" class="nav-link"&gt;Toute l'offre de formation&lt;/a&gt;<br>                           &lt;/li&gt;<br>                           &lt;li class="nav-item has-children"&gt;<br>                               &lt;a href="/offre-de-formation/bachelor-universitaire-de-technologie/" class="nav-link"&gt;Bachelor Universitaire de Technologie&lt;/a&gt;<br>                               &lt;ul class="nav-level-3"&gt;<br>                                   &lt;li class="nav-item"&gt;<br>                                       &lt;a href="/offre-de-formation/bachelor-universitaire-de-technologie/carrieres-sociales/parcours-animation-sociale-et-socioculturelle/"  class="nav-link"&gt;Animation sociale et socioculturelle&lt;/a&gt;<br>                                   &lt;/li&gt;<br>                                    [...]<br>                               &lt;/ul&gt;<br>                           &lt;/li&gt;<br>                            [...]<br>                           &lt;li class="nav-item"&gt;<br>                               &lt;a href="/formation-continue/" class="nav-link"&gt;Formation continue&lt;/a&gt;<br>                           &lt;/li&gt;<br>                       &lt;/ul&gt;<br>                   &lt;/div&gt;<br>               &lt;/li&gt;<br>           &lt;/ul&gt;<br>       &lt;/div&gt;<br>   &lt;/div&gt;<br>&lt;/nav&gt;</p>
+
+
+      notes: >-
+        
+
+
+
+
+      alt: >-
+        
+
+
+      credit: >-
+        
+
+
+
 
 blocks:
   - template: chapter

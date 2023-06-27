@@ -1,6 +1,5 @@
 {{ define "main" }}
-  
-{{ partial "posts/hero-single.html" . }}
+  {{ partial "posts/hero-single.html" . }}
 
   <div class="document-content" itemscope itemtype="https://schema.org/NewsArticle">
     <meta itemprop="headline" content="{{ partial "PrepareHTML" .Title }}">
@@ -14,7 +13,9 @@
         "block_wrapped" true
       ) }}
 
-    {{ partial "blocks/list.html" . }}
+    {{ partial "contents/list.html" . }}
+
+    {{ partial "posts/prevnext.html" . }}
 
     {{ partial "hooks/before-document-content-end.html" . }}
   </div>

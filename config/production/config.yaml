@@ -6,3 +6,8 @@ baseURL: https://lab.noesya.coop
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
 
+## DEUXFLEURS
+deployment:
+  targets:
+    - name: "production"
+      URL: "s3://lab.noesya.coop?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"

@@ -2,8 +2,9 @@
 // main:not(.page-with-blocks)
 //     // padding-bottom: $spacing5
 
-header#document-header .logo
-    align-items: center
+header#document-header 
+    .logo
+        align-items: center
 .page__home main
     background:
         image: url("/assets/images/crop.png")
@@ -48,13 +49,13 @@ header#document-header .logo
                 width: col(8)
             .top
                 margin-bottom: $spacing2
-            .block-partners--grid .block-content
+            .block-organizations--grid .block-content
                 width: 100%
 .organizations__section
     .organizations
         @include grid(4)
 .organizations,
-.block-partners--grid .grid.organizations
+.block-organizations--grid .grid.organizations
     @include in-page-with-or-without-sidebar
         @include media-breakpoint-up(desktop)
             grid-column-gap: $grid-gutter !important

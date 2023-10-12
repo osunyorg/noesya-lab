@@ -5,5 +5,7 @@ external_domains:
   - "*.osuny.org"
   - "osuny.s3.fr-par.scw.cloud"
   - "tile.openstreetmap.org"
+  - "vimeo.com"
   - "player.vimeo.com"
+  - "vumbnail.com"
 social:

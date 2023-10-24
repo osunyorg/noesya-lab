@@ -35,7 +35,7 @@ description_short: >
   
 
 contents_reading_time:
-  seconds: 150
+  seconds: 151
   text: >-
     3 minutes
 contents:
@@ -52,7 +52,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Les sites produits avec Osuny doivent répondre, autant que possible, aux critères énoncés dans l'article <a href="https://noesya-lab-osuny.netlify.app/publications/2022-05-09-qualite-frontend/">Qualité frontend : à la recherche du AAA</a>. Les sites Osuny s'appuient sur un thème, qui encapsule les fonctionnalités et les bonnes pratiques d'accessibilité et d'éco-conception.</p><p>Le thème doit être simple à maintenir pour l'équipe cœur :</p><ul> <li>aussi peu de dépendances que possible</li> <li>organisé de façon systématique</li> <li>correctement documenté</li> <li>peu entrelacé, pour éviter les usines à gaz / assiettes de spaghetti</li> </ul><p>Les sites doivent être simples à développer et à maintenir pour toute la communauté :</p><ul> <li>facile à apprendre (bonne documentation, principes simples)</li> <li>avec de bonnes conventions par défaut</li> <li>avec un code et un style lisible</li> <li>configurable simplement</li> <li>facile à mettre à jour</li> </ul>
+        <p>Les sites produits avec Osuny doivent répondre, autant que possible, aux critères énoncés dans l'article&nbsp;<a href="https://noesya-lab-osuny.netlify.app/publications/2022-05-09-qualite-frontend/">Qualité frontend : à la recherche du AAA</a>. Les sites Osuny s'appuient sur un thème, qui encapsule les fonctionnalités et les bonnes pratiques d'accessibilité et d'éco-conception.</p><p>Le thème doit être simple à maintenir pour l'équipe cœur :</p><ul> <li>aussi peu de dépendances que possible</li> <li>organisé de façon systématique</li> <li>correctement documenté</li> <li>peu entrelacé, pour éviter les usines à gaz / assiettes de spaghetti</li> </ul><p>Les sites doivent être simples à développer et à maintenir pour toute la communauté&nbsp;:</p><ul> <li>facile à apprendre (bonne documentation, principes simples)</li> <li>avec de bonnes conventions par défaut</li> <li>avec un code et un style lisible</li> <li>configurable simplement</li> <li>facile à mettre à jour</li> </ul>
 
       notes: >-
         
@@ -136,7 +136,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Pour simplifier la contribution par d'autres développeurs, on s'appuie sur Bootstrap. Mais pour optimiser, on allège le poid de la feuille de style avec Purge.</p><p>Objectifs :</p><ul> <li>vider la feuille de style avec Purge (PostCSS)</li> <li>n'avoir qu'un setup de PostCSS pour tous les sites</li> </ul><p>Problèmes rencontrés :</p><ul> <li>un fichier spécifique par site pour éviter de purger les sélecteurs nécessaires</li> <li>actuellement purgecss se base sur les layouts hugo avant génération</li> <li>s'appuyer sur hugo_stats.json pour purger ne fonctionne pas en l'état car nous utilisons des sélecteurs CSS s'appuyant sur les attributs html (exemple : header[role="banner"])</li> <li>dans le workflow de build Hugo, le CSS est généré via PostCSS en même temps que le build du HTML, ça ne permet pas de s'appuyer sur le build (/public) html final pour lancer un purge.</li> </ul><p>Pistes :</p><ul> <li>lancer purge via npm après le build hugo, cela fonctionne mais cela peut rallonger le temps de compilation total (en fonction de la quantité de fichiers html générés)</li> <li>enlever les sélecteurs de classes par attribut et utiliser hugo_stats.json pour purger.</li> </ul>
+        <p>Pour simplifier la contribution par d'autres développeurs, on s'appuie sur Bootstrap. Mais pour optimiser, on allège le poid de la feuille de style avec Purge.</p><p>Objectifs :</p><ul> <li>vider la feuille de style avec Purge (PostCSS)</li> <li>n'avoir qu'un setup de PostCSS pour tous les sites</li> </ul><p>Problèmes rencontrés :</p><ul> <li>un fichier spécifique par site pour éviter de purger les sélecteurs nécessaires</li> <li>actuellement purgecss se base sur les layouts hugo avant génération</li> <li>s'appuyer sur hugo_stats.json pour purger ne fonctionne pas en l'état car nous utilisons des sélecteurs CSS s'appuyant sur les attributs html (exemple&nbsp;: header[role="banner"])</li> <li>dans le workflow de build Hugo, le CSS est généré via PostCSS en même temps que le build du HTML, ça ne permet pas de s'appuyer sur le build (/public) html final pour lancer un purge.</li> </ul><p>Pistes :</p><ul> <li>lancer purge via npm après le build hugo, cela fonctionne mais cela peut rallonger le temps de compilation total (en fonction de la quantité de fichiers html générés)</li> <li>enlever les sélecteurs de classes par attribut et utiliser hugo_stats.json pour purger.</li> </ul>
 
       notes: >-
         
@@ -164,7 +164,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>La situation actuelle n'est satisfaisante pour personne :</p><ul> <li>le code HTML est très beau, mais incompréhensible pour un utilisateur de Bootstrap</li> <li>le code SASS est complexe et entrelacé, pas documenté, difficile à utiliser pour tout le monde</li> </ul><p>Pour maintenir la qualité du code HTML, nous tentons un prototype sans Bootstrap, avec du code SASS custom. Le projet constitue le <a href="https://github.com/noesya/osuny-hugo-theme-AAA">Thème Osuny AAA</a>.</p>
+        <p>La situation actuelle n'est satisfaisante pour personne :</p><ul> <li>le code HTML est très beau, mais incompréhensible pour un utilisateur de Bootstrap</li> <li>le code SASS est complexe et entrelacé, pas documenté, difficile à utiliser pour tout le monde</li> </ul><p>Pour maintenir la qualité du code HTML, nous tentons un prototype sans Bootstrap, avec du code SASS custom. Le projet constitue le&nbsp;<a href="https://github.com/noesya/osuny-hugo-theme-AAA">Thème Osuny AAA</a>.</p>
 
       notes: >-
         

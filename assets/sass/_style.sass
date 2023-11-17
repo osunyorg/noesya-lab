@@ -19,11 +19,10 @@ header#document-header
         background-attachment: fixed
         h1
             font-size: px2rem(55)
-
 .has-menu-opened 
     .posts__page header.hero
         .post-categories li a
-            color: white
+            color: transparentize(white, .45)
 .posts__section,
 .categories__term,
 .authors__term,
@@ -110,6 +109,6 @@ header.hero
             color: $color-accent
     .posts__page header.hero
         .post-categories li a
-            color: white
+            color: transparentize(white, .45)
             .has-menu-opened  & 
-                color: $color-accent
+                color: transparentize($color-accent, .45)

@@ -13,10 +13,17 @@ header#document-header
     .hero 
         a
             @include link
+            .has-menu-opened &
+                @include link(white)
     @include media-breakpoint-up(desktop)
         background-attachment: fixed
         h1
             font-size: px2rem(55)
+
+.has-menu-opened 
+    .posts__page header.hero
+        .post-categories li a
+            color: white
 .posts__section,
 .categories__term,
 .authors__term,
@@ -92,6 +99,8 @@ header.hero
     .page__home main
         .hero a
             @include link(white)
+            .has-menu-opened &
+                @include link($color-accent)
     .hero
         background: transparent
     .nav-accessibility a
@@ -102,3 +111,5 @@ header.hero
     .posts__page header.hero
         .post-categories li a
             color: white
+            .has-menu-opened  & 
+                color: $color-accent

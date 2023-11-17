@@ -10,6 +10,9 @@ header#document-header
         image: url("/assets/images/crop.png")
         position: 85% bottom
         repeat: no-repeat
+    .hero 
+        a
+            @include link
     @include media-breakpoint-up(desktop)
         background-attachment: fixed
         h1
@@ -26,11 +29,13 @@ header#document-header
         border: none
         a
             @include h2
-            @include link($color-accent)
         .post-meta time
             @include h2
             color: inherit
             font-family: $body-font-family
+    .has-menu-opened &
+        .post a
+            text-decoration: none
 .posts__page 
     header.hero
         .post-categories li 
@@ -84,11 +89,16 @@ header.hero
         padding-left: 0 !important
 
 @media (prefers-color-scheme: dark)
+    .page__home main
+        .hero a
+            @include link(white)
     .hero
         background: transparent
     .nav-accessibility a
         color: $color-accent
-    .categories__term .posts--list .post a
-        @include link(white)
-        .has-menu-opened &
-            @include link($color-accent)
+    .has-menu-opened
+        .categories__term .posts--list .post a
+            color: $color-accent
+    .posts__page header.hero
+        .post-categories li a
+            color: white

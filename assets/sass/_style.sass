@@ -5,6 +5,10 @@
 header#document-header 
     .logo
         align-items: center
+    @include media-breakpoint-up(desktop)
+        nav
+            .menu
+                padding-top: 239px
 .page__home main
     background:
         image: url("/assets/images/crop.png")

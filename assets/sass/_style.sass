@@ -120,7 +120,8 @@ header.hero
             .has-menu-opened  & 
                 color: transparentize($color-accent, .45)
 
-.block-siblings-navigation
-    .block-content 
-        padding-left: 0 !important
-        padding-right: offset(4)
+@include media-breakpoint-up(desktop)
+    .block-siblings-navigation
+        .block-content 
+            padding-left: 0 !important
+            padding-right: offset(4)

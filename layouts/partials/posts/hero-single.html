@@ -11,7 +11,7 @@
 <header class="hero {{ if $image -}}hero--with-image hero--image-{{- $direction -}}{{- end }} {{ if $breadcrumb_is_after_hero -}} hero--no-margin {{- end }}">
   <div class="container">
     <div class="content">
-      {{ if .Params.Categories }}
+      {{ if .Params.posts_categories }}
         {{ partial "posts/categories.html" . }}
     {{ end }}
       <h1>{{ partial "PrepareHTML" $title }}</h1>

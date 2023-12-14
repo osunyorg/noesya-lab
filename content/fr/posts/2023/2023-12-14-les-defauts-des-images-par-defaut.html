@@ -1,0 +1,276 @@
+---
+title: "Les défauts des images par défaut"
+date: "2023-12-14T14:08:07+01:00"
+breadcrumbs:
+  - title: "noesya"
+    path: "/"
+  - title: "Publications"
+    path: "/publications/"
+  - title: >-
+      Les défauts des images par défaut
+url: "/publications/2023-12-14-les-defauts-des-images-par-defaut/"
+slug: "les-defauts-des-images-par-defaut"
+
+full_width: false
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+authors:
+  - "olivia-simonet"
+posts_categories:
+  - "rd"
+translation_key: communication-website-post-aabf8c2f-8f04-47a5-ad31-d088f1569830
+
+
+meta_description: >
+  
+description: >
+  
+
+summary: >
+  
+description_short: >
+  
+
+contents_reading_time:
+  seconds: 287
+  text: >-
+    5 minutes
+contents:
+  - kind: heading
+    title: >-
+      Design &amp; image par défaut
+    position: 0
+    rank: 2
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: no_background
+      text: >-
+        <p>Sur Osuny, les développeurs et développeuses d’un site ont la possibilité de renseigner une image par défaut, utilisée dans les objets <b>post</b>, <b>event</b>, <b>page</b>, <b>paper</b> et <b>volume</b>.</p><p>Actuellement, la méthode est la suivante : il faut ajouter au dossier <b>/static/assets/images</b> un fichier <b>default.png/jpg</b>, puis ajouter au <b>fichier /config/_default/config.yaml</b> les paramètres ci-dessous (ou un seul) :</p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: alt_background
+      text: >-
+        <p>posts:</p><p>    default_image: true</p><p>events:</p><p>    default_image: true</p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: no_background
+      text: >-
+        <p>Une fois ceci fait, actualités et événements sans image prendront celle par défaut.</p><p>Néanmoins, cette méthode nous semble aujourd’hui dépréciée, en particulier parce que le partial hugo utilisé (<b>image-default.html</b>) pose plusieurs problèmes : </p><ul> <li>Il ne permet pas de gérer les cas où une image serait dans un autre format (svg, jpeg…), ni le cas de l’ajout d’une image rétina ;</li> <li>Il doit impérativement être refactorisé, car actuellement le code traite de façon identique les deux cas de “.png” et “.jpg”. On pourrait envisager l’utilisation d’une variable à la place de l’extension en dur.</li> </ul>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+
+  - kind: heading
+    title: >-
+      SEO &amp; image de partage
+    position: 1
+    rank: 2
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: no_background
+      text: >-
+        <p>Ces problématiques soulèvent également une interrogation, au sujet de l’image par défaut utilisée pour partager des pages et articles d’un site, d’une part parce que le problème est le même au niveau de l’imposition des extensions (strictement share.jpg ou share.png), d’autre part parce que cela pose plusieurs questions :</p><ul> <li>Faut-il ajouter à Osuny une image share par défaut ? Actuellement, il faut en ajouter une au dossier <b>static/assets/images/</b>.</li> <li>L’image de share doit-elle être identique à celle par défaut (ou inversement) ?</li> <li>Du point de vue de l’écoconception, moins il y a d’image, plus les sites sont légers. Néanmoins, les posts sociaux ont moins d’impact sans média ; il faut donc s’attendre à ce que les éditeurs et éditrices des sites en fassent souvent la demande.</li> </ul>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+
+  - kind: heading
+    title: >-
+      Solutions potentielles
+    position: 2
+    rank: 2
+  - kind: block
+    template: chapter
+    title: >-
+      Modifiable(s) dans le back-office ou dans le code ?
+    ranks:
+      self: 3
+    data:
+      layout: no_background
+      text: >-
+        <ul><li><b>Pendant le développement</b></li></ul><p>Actuellement, l’activation de l’image par défaut se fait par les développeurs et développeuses dans la <b>config.yaml</b> du site.</p><p>Par rapport au travail des développeurs et développeuses, plusieurs solutions peuvent être envisagées, au moins pour l’image par défaut. Actuellement, on peut activer cette dernière pour les actualités et les événements séparément.</p><p>Pour pousser cette méthode de façon plus logique, plutôt qu’indiquer dans le partial hugo le chemin vers l’image, pourquoi ne pas faire comme on le fait actuellement pour le logo, de cette façon, directement dans la configuration du site :</p><p><b></b><br></p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: alt_background
+      text: >-
+        <p>posts:</p><p>    default_image: false</p><p>events:</p><p>    default_image: "/assets/images/default.jpeg"</p>
+
+      notes: >-
+        <p>NB : ce n’est pas très élégant de procéder de cette façon, car cela implique d’avoir une condition false / “image.jpg”, au lieu d’un véritable booléen.<br></p>
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: no_background
+      text: >-
+        <p>Le problème du partial actuel est aussi en lien avec l’amélioration des performances du site. Dans un souci d’éco-conception, il faut pouvoir indiquer des tailles aux images, via les attributs <b>width</b> et <b>height</b> (utiliser les tailles appropriées permet d'économiser des données mobiles et de réduire le temps de chargement). Du point de vue du design, cela permet d’éviter les sauts de mise en page (notamment entre la version ordinateur et celle mobile/tablette).</p><p>Actuellement, les images adaptatives sont bien présentes sur Osuny, mais elles sont gérées par le CDN, qui fournit leur différentes variantes (13 au total). </p><p>En s’appuyant sur ce système, sans aller plus loin que nécessaire, on aurait donc 9 variantes, prenant en compte 2 breakpoints au lieu de 3 :</p><ul> <li>L’image d’origine ;</li> <li>Deux images par breakpoints (4 donc) ;</li> <li>Deux images retina ;</li> <li>Une image pour les navigateurs qui ne gèrent pas le format adaptatif.</li> </ul><p>Dans le cas de nos images par défaut, actuellement, elles ne bénéficient pas de cette fonctionnalité. Néanmoins, si l’on passe l’ajout des images par défaut et de partage dans le back-office, il sera alors possible d’utiliser cette méthode pour les images affichées sur le site. En revanche, lors du partage d’une page, seule une version de cette image pourra être utilisée.</p><ul><li><b>Depuis le back-office</b></li></ul><p>Pour l’image de partage, dans le cas où une image serait administrée depuis le BO et appliquée à toutes les pages, l’idée pourrait être d’avoir deux champs d’images : un premier, déjà existant, pour mettre une image d’illustration, ainsi qu’un deuxième propre au partage.</p>
+
+      notes: >-
+        <p>Voir <a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">Images adaptatives - MDN</a>.<br></p>
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Une image de partage propre à chaque objet ?
+    ranks:
+      self: 3
+    data:
+      layout: no_background
+      text: >-
+        <p>L’une des options serait de permettre aux utilisateurs et utilisatrices, depuis le BO, de renseigner une image de partage par défaut, modifiable ensuite au cas par cas dans les objets (<b>post</b>, <b>event</b>, <b>paper</b>, <b>volume</b>, <b>page</b>, <b>person</b>).</p><p>Que ce soit via le back-office ou via la configuration du site, on peut alors se demander jusqu’où est-ce que l’on doit aller dans la personnalisation : </p><ul> <li>Une image de partage globale ;</li> <li>Une image de partage optionnelle pour chaque type d’objet ;</li> <li>Une image de partage optionnelle pour chaque page actualité, événement, etc.</li> </ul>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+
+  - kind: heading
+    title: >-
+      Conclusion
+    position: 3
+    rank: 2
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: no_background
+      text: >-
+        <p>Une image par défaut au niveau du site, envoyée par le back-office Osuny, permet de laisser le contrôle éditorial aux personnes en charge de la contribution, et de bénéficier du CDN pour générer les variantes d’images. Les personnes en charge du dev peuvent ensuite choisir en configuration d’utiliser l’image ou pas pour les posts et les events.</p><p>En ce qui concerne le partage, il paraît raisonnable d’utiliser l’image par défaut pour le partage de la page d’accueil, si elle n’a pas d’image à la une. Cela permet d’avoir une image qui représente le site dans son ensemble. En revanche, pour le partage de toute autre page (article, événement, etc.) sur le site, il paraît plus sain de ne pas mettre d’image s’il n’y en a pas plutôt que d’utiliser l’image par défaut.</p><p>Dans le futur, si la réalité l’exige, peut-être faudra-t-il affiner la définition des images par défaut, notamment de distinguer celles utilisées pour éviter les “dents creuses” des articles sans images de celles utilisées pour le partage sur des réseaux sociaux. Il sera peut-être également nécessaire de proposer des images distinctes par type d’objet (une image par défaut de page, une image par défaut de post…), et de proposer une image dédiée au partage pour chaque contenu, comme la meta description.</p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+
+
+---
+

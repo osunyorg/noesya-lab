@@ -30,8 +30,6 @@ description: >
 
 summary: >
   
-description_short: >
-  
 
 contents_reading_time:
   seconds: 83
@@ -39,8 +37,7 @@ contents_reading_time:
     1 minute
 contents:
   - kind: heading
-    title: >-
-      AAA (qualité supérieure)
+    title: "AAA (qualité supérieure)"
     position: 0
     rank: 2
   - kind: block
@@ -52,7 +49,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p><i>Description</i></p><p>Balisage purement sémantique avec utilisation de <a href="http://schema.org/">schema.org</a> et aria.</p><p><i>Outils :</i></p><ul> <li>Pas de Bootstrap.</li> <li>Pas de purge parce qu'il n'y a rien à purger.</li> </ul><p><i>HTML :</i></p><ul> <li>Balisage sémantique</li> <li>Utilisation des schemas (schema.org, itemtype et itemprop)</li> <li>Utilisation des propriétés ARIA (<a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>)</li> </ul><p><i>Classes CSS :</i></p><ul> <li>Utiliser en priorité les balises pures, sans classe.</li> <li>S'appuyer sur l'arbre HTML pour les sélecteurs CSS : définir une limite de niveaux pour garder une bonne lisibilité / maintenabilité.</li> <li>Limiter l'usage des classes aux cas où elles apportent du sens, sans pour autant diminuer la compréhension et la maintenabilité.</li> <li>Aucune classe de présentation dans le DOM (row, col, large, mb-5...).</li> <li>Utiliser des body classes indiquant la nature des pages pour du contexte.</li> <li>Quand les balises pures et les body classes ne suffisent pas, ajouter des classes qui indiquent la nature des objets traités (post, person, author, product...)</li> </ul><p>        </p>
+        <p><i>Description</i></p><p>Balisage purement sémantique avec utilisation de <a href="http://schema.org/">schema.org</a> et aria.</p><p><i>Outils :</i></p><ul> <br><li>Pas de Bootstrap.</li> <br><li>Pas de purge parce qu'il n'y a rien à purger.</li> <br> </ul><p><i>HTML :</i></p><ul> <br><li>Balisage sémantique</li> <br><li>Utilisation des schemas (schema.org, itemtype et itemprop)</li> <br><li>Utilisation des propriétés ARIA (<a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>)</li> <br> </ul><p><i>Classes CSS :</i></p><ul> <br><li>Utiliser en priorité les balises pures, sans classe.</li> <br><li>S'appuyer sur l'arbre HTML pour les sélecteurs CSS : définir une limite de niveaux pour garder une bonne lisibilité / maintenabilité.</li> <br><li>Limiter l'usage des classes aux cas où elles apportent du sens, sans pour autant diminuer la compréhension et la maintenabilité.</li> <br><li>Aucune classe de présentation dans le DOM (row, col, large, mb-5...).</li> <br><li>Utiliser des body classes indiquant la nature des pages pour du contexte.</li> <br><li>Quand les balises pures et les body classes ne suffisent pas, ajouter des classes qui indiquent la nature des objets traités (post, person, author, product...)</li> <br> </ul><p><br>  <br>  <br></p>
 
       notes: >-
         
@@ -68,8 +65,7 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Exemple d’un menu
+    title: "Exemple d’un menu"
     position: 1
     rank: 2
   - kind: block
@@ -81,7 +77,7 @@ contents:
     data:
       layout: alt_background
       text: >-
-        <p>&lt;header role="banner"&gt;<br>   &lt;a href="/"&gt;<br>       &lt;img src="https://assets.noesya.coop/images/logos/logo-noesya.svg"<br>                alt="noesya"width="100"height="26"&gt;<br>   &lt;/a&gt;<br>   &lt;button aria-label="Ouvrir / Fermer le menu"&gt;<br>       &lt;!-- SVG / IMG / ::after ::before / ... --&gt;<br>   &lt;/button&gt;<br>   &lt;nav role="navigation" aria-label="Navigation principale"&gt;<br>       &lt;ul&gt;<br>           &lt;li&gt;<br>               &lt;a href="/communs-numeriques"&gt;Communs numériques&lt;/a&gt;<br>           &lt;/li&gt;<br>            [...]<br>       &lt;/ul&gt;<br>   &lt;/nav&gt;<br>&lt;/header&gt;  <br></p>
+        <p>&lt;header role="banner"&gt;<br>   &lt;a href="/"&gt;<br>       &lt;img src="https ://assets.noesya.coop/images/logos/logo-noesya.svg"<br>                alt="noesya"width="100"height="26"&gt;<br>   &lt;/a&gt;<br>   &lt;button aria-label="Ouvrir / Fermer le menu"&gt;<br>       &lt;!-- SVG / IMG / ::after ::before /... --&gt;<br>   &lt;/button&gt;<br>   &lt;nav role="navigation" aria-label="Navigation principale"&gt;<br>       &lt;ul&gt;<br>           &lt;li&gt;<br>               &lt;a href="/communs-numeriques"&gt;Communs numériques&lt;/a&gt;<br>           &lt;/li&gt;<br>            [...]<br>       &lt;/ul&gt;<br>   &lt;/nav&gt;<br>&lt;/header&gt;  <br></p>
 
       notes: >-
         
@@ -97,8 +93,7 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Faire des sélecteurs via des classes CSS ou des attributs HTML ?
+    title: "Faire des sélecteurs via des classes CSS ou des attributs HTML ?"
     position: 2
     rank: 2
   - kind: block
@@ -110,7 +105,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p><i>Breadcrumb</i></p><p>La question se pose pour le cas du breadcrumb :</p>
+        <p><i>Breadcrumb</i></p><p>La question se pose pour le cas du breadcrumb :</p>
 
       notes: >-
         
@@ -133,7 +128,7 @@ contents:
     data:
       layout: alt_background
       text: >-
-        <p>- .breadcrum<br>+ ol[itemtype="https://schema.org/BreadcrumbList"]</p>
+        <p>-.breadcrum<br>+ ol[itemtype="https ://schema.org/BreadcrumbList"]</p>
 
       notes: >-
         
@@ -156,7 +151,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>https://github.com/noesya/osuny-hugo-theme-AAA/pull/21</p><p>L'argument de ne pas utiliser un sélecteur contenant une url (https://schema.org) ne tient pas, car selon le web de Tim Berners-Lee, une page web est un contrat dont l'URI ne doit pas changer.</p>
+        <p>https://github.com/noesya/osuny-hugo-theme-AAA/pull/21</p><p>L'argument de ne pas utiliser un sélecteur contenant une url (https ://schema.org) ne tient pas, car selon le web de Tim Berners-Lee, une page web est un contrat dont l'URI ne doit pas changer.</p>
 
       notes: >-
         
@@ -172,8 +167,7 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Margin top ou bottom ?
+    title: "Margin top ou bottom ?"
     position: 3
     rank: 2
   - kind: block

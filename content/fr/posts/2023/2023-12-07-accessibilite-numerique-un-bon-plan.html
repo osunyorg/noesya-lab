@@ -1,5 +1,5 @@
 ---
-title: "Accessibilité numérique : un bon plan"
+title: "Accessibilité numérique : un bon plan"
 date: "2023-12-07T00:00:00+01:00"
 breadcrumbs:
   - title: "noesya"
@@ -32,8 +32,6 @@ description: >
 
 summary: >
   
-description_short: >
-  
 
 contents_reading_time:
   seconds: 385
@@ -49,7 +47,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Dans un site créé et édité via Osuny, les différentes pages sont bien organisées et l’information est visuellement accessible. Les préceptes de la sémantique HTML sont bien respectés, ce qui permet de naviguer dans une page depuis une navigation, puis un titre de premier niveau (h1). Le contenu de la page est ensuite créé par les personnes en charge de l’édition du site.</p><p>Pour ajouter un titre de deuxième niveau (h2), il faut utiliser la fonctionnalité « Ajouter un nouveau titre » dans le back-office. Ceux de troisième niveau sont automatiquement créés par les blocs de liste.</p><p>Mais il est possible que la contribution à un site perde les utilisateurs et utilisatrices de technologies d’assistance (lecteurs d’écran notamment) : le plan de la page devient incohérent, avec un titre de premier niveau, puis une multitude de titres de deuxième niveau, sans différence de hiérarchie entre chacun.</p><p>Les titres de troisième niveau sont-ils réellement de bons alliés ? Ont-ils leur place dans la navigation ? </p><p>Depuis le remaniement du système de titres sur Osuny, le plan HTML des pages est construit de sorte à ce que chaque élément HTML &lt;article&gt; soit doté d’un titre de niveau 3. Mais si aucun h2 n’est ajouté avant ce dernier (ce qui arrive régulièrement), l’harmonie est brisée, tant du point de vue de la sémantique que de l’accessibilité.</p><p>Prendre en compte ces problématiques et trouver des solutions n’est pas évident, mais il est essentiel de ne pas discriminer l’accès aux informations qu’elles et ils souhaitent transmettre.</p><p>La question est : comment ?</p>
+        <p>Dans un site créé et édité via Osuny, les différentes pages sont bien organisées et l’information est visuellement accessible. Les préceptes de la sémantique HTML sont bien respectés, ce qui permet de naviguer dans une page depuis une navigation, puis un titre de premier niveau (h1). Le contenu de la page est ensuite créé par les personnes en charge de l’édition du site.</p><p>Pour ajouter un titre de deuxième niveau (h2), il faut utiliser la fonctionnalité « Ajouter un nouveau titre » dans le back-office. Ceux de troisième niveau sont automatiquement créés par les blocs de liste.</p><p>Mais il est possible que la contribution à un site perde les utilisateurs et utilisatrices de technologies d’assistance (lecteurs d’écran notamment) : le plan de la page devient incohérent, avec un titre de premier niveau, puis une multitude de titres de deuxième niveau, sans différence de hiérarchie entre chacun.</p><p>Les titres de troisième niveau sont-ils réellement de bons alliés ? Ont-ils leur place dans la navigation ? </p><p>Depuis le remaniement du système de titres sur Osuny, le plan HTML des pages est construit de sorte à ce que chaque élément HTML &lt;article&gt; soit doté d’un titre de niveau 3. Mais si aucun h2 n’est ajouté avant ce dernier (ce qui arrive régulièrement), l’harmonie est brisée, tant du point de vue de la sémantique que de l’accessibilité.</p><p>Prendre en compte ces problématiques et trouver des solutions n’est pas évident, mais il est essentiel de ne pas discriminer l’accès aux informations qu’elles et ils souhaitent transmettre.</p><p>La question est : comment ?</p>
 
       notes: >-
         
@@ -64,8 +62,7 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Aux origines : le contenu sectionnant
+    title: "Aux origines : le contenu sectionnant"
     position: 0
     rank: 2
   - kind: block
@@ -77,7 +74,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Si l’on s’intéresse au langage HTML, dont la sémantique est en général transparente, il est nécessaire avant d’entreprendre toute réflexion de comprendre à quoi cette problématique est liée. Ainsi, on doit distinguer l’élément &lt;section&gt; du “contenu sectionnant”. </p><p>En effet, une &lt;section&gt; est un élément sectionnant, mais d’autres composants HTML appartiennent à aussi cette catégorie : &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt; et &lt;section&gt;, ainsi que les contenus de titre.</p><p>Or, nos titres de troisième niveau, parfois orphelins d’un parent de deuxième niveau, apparaissent notamment dans des éléments &lt;article&gt;. Il semble donc cohérent d’utiliser des titres à l’intérieur de ceux-ci.</p><p>Il est important de noter que de nombreux sites expérimentés en matière d’accessibilité utilisent également cette technique, ce qui peut nous rassurer quant à la méthodologie employée.</p><p>À titre d’exemple, le <a href="https://access42.net/blog/">blog d’Access 42</a> s’organise de cette manière :<br></p>
+        <p>Si l’on s’intéresse au langage HTML, dont la sémantique est en général transparente, il est nécessaire avant d’entreprendre toute réflexion de comprendre à quoi cette problématique est liée. Ainsi, on doit distinguer l’élément &lt;section&gt; du “contenu sectionnant”. </p><p>En effet, une &lt;section&gt; est un élément sectionnant, mais d’autres composants HTML appartiennent à aussi cette catégorie : &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt; et &lt;section&gt;, ainsi que les contenus de titre.</p><p>Or, nos titres de troisième niveau, parfois orphelins d’un parent de deuxième niveau, apparaissent notamment dans des éléments &lt;article&gt;. Il semble donc cohérent d’utiliser des titres à l’intérieur de ceux-ci.</p><p>Il est important de noter que de nombreux sites expérimentés en matière d’accessibilité utilisent également cette technique, ce qui peut nous rassurer quant à la méthodologie employée.</p><p>À titre d’exemple, le <a href="https://access42.net/blog/">blog d’Access 42</a> s’organise de cette manière :<br></p>
 
       notes: >-
         
@@ -106,7 +103,7 @@ contents:
         file: "e9379432-761d-4dfb-b3e8-d1d152fda476"
 
         alt: >-
-          Hiérarchie des titres du blog d'Access42 : 4 niveaux de titres
+          Hiérarchie des titres du blog d'Access42:4 niveaux de titres
 
         credit: >-
           
@@ -122,7 +119,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p><b>NB :</b> il est tout à fait possible d’employer plutôt les attributs WAI-ARIA complémentaires role="heading" et aria-level.</p>
+        <p><b>NB :</b> il est tout à fait possible d’employer plutôt les attributs WAI-ARIA complémentaires role="heading" et aria-level.</p>
 
       notes: >-
         
@@ -138,14 +135,13 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Déchiffrer les guides
+    title: "Déchiffrer les guides"
     position: 1
     rank: 2
   - kind: block
     template: chapter
     title: >-
-      Génèse du code : les standards HTML
+      Génèse du code : les standards HTML
     ranks:
       self: 3
     data:
@@ -191,13 +187,13 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Règles de navigation : WCAG &amp; RGAA
+      Règles de navigation : WCAG &amp; RGAA
     ranks:
       self: 3
     data:
       layout: no_background
       text: >-
-        <p>Pour rendre la navigation accessible à tous et toutes, il faut respecter un certain nombre de règles et de bonnes pratiques. Ainsi, les balises de titres (h2, h3, etc.) sont comme des latitude et de longitude sur notre page. Les titres de deuxième niveau séparent le contenu en régions claires, définissant les zones importantes, tandis que les ceux de troisième niveau aident à repérer les contenus plus précis.</p><ul><li> <b>Les principes du WCAG</b><br> </li></ul><p>Pour valider la bonne pratique d’organisation du contenu d’une page en section et titres, le WCAG propose une <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G141.html">technique de vérification</a>, résumée dans leur procédure de cette façon : </p>
+        <p>Pour rendre la navigation accessible à tous et toutes, il faut respecter un certain nombre de règles et de bonnes pratiques. Ainsi, les balises de titres (h2, h3, etc.) sont comme des latitude et de longitude sur notre page. Les titres de deuxième niveau séparent le contenu en régions claires, définissant les zones importantes, tandis que les ceux de troisième niveau aident à repérer les contenus plus précis.</p><ul><li> <br><b>Les principes du WCAG</b><br><br> </li></ul><p>Pour valider la bonne pratique d’organisation du contenu d’une page en section et titres, le WCAG propose une <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G141.html">technique de vérification</a>, résumée dans leur procédure de cette façon : </p>
 
       notes: >-
         
@@ -243,7 +239,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Mais le WCAG renvoie également vers une source externe au sujet de la hiérarchisation des titres (article en anglais : <a href="https://www.nomensa.com/blog/how-structure-headings-web-accessibility/">How to structure headings for web accessibility</a>) et celle-ci précise également qu’il ne faut qu’un seul h1, déterminant pour une page web :</p>
+        <p>Mais le WCAG renvoie également vers une source externe au sujet de la hiérarchisation des titres (article en anglais : <a href="https://www.nomensa.com/blog/how-structure-headings-web-accessibility/">How to structure headings for web accessibility</a>) et celle-ci précise également qu’il ne faut qu’un seul h1, déterminant pour une page web :</p>
 
       notes: >-
         
@@ -289,7 +285,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>Au sujet des titres de niveau 2, il est écrit ceci :<br></p>
+        <p>Au sujet des titres de niveau 2, il est écrit ceci :<br></p>
 
       notes: >-
         
@@ -335,7 +331,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>En définitive, cet article nous donne un moyen de pouvoir statuer sur ce qu’est une bonne structure HTML :</p>
+        <p>En définitive, cet article nous donne un moyen de pouvoir statuer sur ce qu’est une bonne structure HTML :</p>
 
       notes: >-
         
@@ -358,7 +354,7 @@ contents:
     data:
       layout: alt_background
       text: >-
-        <p><i>When you get to the next heading, ask yourself: Is it a new section? If so then a Heading 2 would be appropriate. If it’s a sub-section of the last heading 2, then a Heading 3 would be suitable. If it’s a sub-section of the last Heading 3, then a Heading 4 would be a good fit, and so on.</i></p>
+        <p><i>When you get to the next heading, ask yourself : Is it a new section ? If so then a Heading 2 would be appropriate. If it’s a sub-section of the last heading 2, then a Heading 3 would be suitable. If it’s a sub-section of the last Heading 3, then a Heading 4 would be a good fit, and so on.</i></p>
 
       notes: >-
         
@@ -381,7 +377,7 @@ contents:
     data:
       layout: no_background
       text: >-
-        <p>De nombreux exemples(BBC, GOV.UKs), joints à l’article nous montrent qu’il est possible, et surtout logique, de bien signaler chaque section par l’emploi d’un h2. Chaque enfant de cette section est alors reconnaissable, visuellement et vocalement, par la présence de titres de troisième niveau.</p><ul><li><b>Critères du RGAA</b></li></ul><p>Lorsque l’on s’intéresse au Référentiel Général de l’Amélioration de l’Accessibilité, nous obtenons une nouvelle corde à notre arc de réflexion. En effet, le <a href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#9.1">critère 9.1</a> s’intitule ainsi : « Dans chaque page web, l’information est-elle structurée par l’utilisation appropriée de titres ? »</p><p>Il impose également de respecter la hiérarchie des titres : </p>
+        <p>De nombreux exemples(BBC, GOV.UKs), joints à l’article nous montrent qu’il est possible, et surtout logique, de bien signaler chaque section par l’emploi d’un h2. Chaque enfant de cette section est alors reconnaissable, visuellement et vocalement, par la présence de titres de troisième niveau.</p><ul><li><b>Critères du RGAA</b></li></ul><p>Lorsque l’on s’intéresse au Référentiel Général de l’Amélioration de l’Accessibilité, nous obtenons une nouvelle corde à notre arc de réflexion. En effet, le <a href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#9.1">critère 9.1</a> s’intitule ainsi : « Dans chaque page web, l’information est-elle structurée par l’utilisation appropriée de titres ? »</p><p>Il impose également de respecter la hiérarchie des titres : </p>
 
       notes: >-
         
@@ -404,7 +400,7 @@ contents:
     data:
       layout: alt_background
       text: >-
-        <p><i>Dans chaque page web, la hiérarchie entre les titres (balise &lt;hx&gt; ou balise possédant un attribut WAI-ARIA role="heading" associé à un attribut WAI-ARIA aria-level) est-elle pertinente ?</i><br></p>
+        <p><i>Dans chaque page web, la hiérarchie entre les titres (balise &lt;hx&gt; ou balise possédant un attribut WAI-ARIA role="heading" associé à un attribut WAI-ARIA aria-level) est-elle pertinente ?</i><br></p>
 
       notes: >-
         
@@ -443,20 +439,19 @@ contents:
 
 
   - kind: heading
-    title: >-
-      Sensibilisation ou contrainte ?
+    title: "Sensibilisation ou contrainte ?"
     position: 2
     rank: 2
   - kind: block
     template: chapter
     title: >-
-      Approche technique : la solution de repli d’Osuny
+      Approche technique : la solution de repli d’Osuny
     ranks:
       self: 3
     data:
       layout: no_background
       text: >-
-        <p>Auparavant, nous avions mis en place un système permettant de détecter la présence ou non d’un h2 dans un bloc. Si le champ de titre était laissé vide, nous ajoutions un titre masqué générique (exemple : &lt;h2&gt;Bloc de pages&lt;/h2&gt;, uniquement disponible pour la navigation via les technologies d’assistance, ce qui permettait de respecter la hiérarchie des titres et la structure HTML.</p><p>Pourquoi ne pas simplement reproduire ce fonctionnement ?</p>
+        <p>Auparavant, nous avions mis en place un système permettant de détecter la présence ou non d’un h2 dans un bloc. Si le champ de titre était laissé vide, nous ajoutions un titre masqué générique (exemple : &lt;h2&gt;Bloc de pages&lt;/h2&gt;, uniquement disponible pour la navigation via les technologies d’assistance, ce qui permettait de respecter la hiérarchie des titres et la structure HTML.</p><p>Pourquoi ne pas simplement reproduire ce fonctionnement ?</p>
 
       notes: >-
         
@@ -473,13 +468,13 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Approche humaine : la prise de conscience
+      Approche humaine : la prise de conscience
     ranks:
       self: 3
     data:
       layout: no_background
       text: >-
-        <p>Au-delà des complications techniques demandées par l’ajout d’un titre par défaut, pour pallier son absence, cela signifie que les éditeurs et éditrices du site ne peuvent comprendre les enjeux qui se cachent derrière l’ajout d’un simple titre à leur page.</p><p>Ainsi, nous préférons emprunter le chemin de la sensibilisation : éduquer les contributeurs et contributrices sur l'accessibilité, grâce à des helpers dans le back-office. Cela permet d’encourager de meilleures pratiques web et de valoriser l’accessibilité web.</p><p>Cette solution est à double tranchant : cela penche en faveur d’une sensibilisation des internautes au soin de l’accessibilité, mais donne cependant la liberté aux éditeurs et éditrices des sites, en l’absence de contrainte, de respecter ou non ces règles.</p><p>Les différents cas d’usages nous permettront d’éventuellement revenir sur cette décision.</p>
+        <p>Au-delà des complications techniques demandées par l’ajout d’un titre par défaut, pour pallier son absence, cela signifie que les éditeurs et éditrices du site ne peuvent comprendre les enjeux qui se cachent derrière l’ajout d’un simple titre à leur page.</p><p>Ainsi, nous préférons emprunter le chemin de la sensibilisation : éduquer les contributeurs et contributrices sur l'accessibilité, grâce à des helpers dans le back-office. Cela permet d’encourager de meilleures pratiques web et de valoriser l’accessibilité web.</p><p>Cette solution est à double tranchant : cela penche en faveur d’une sensibilisation des internautes au soin de l’accessibilité, mais donne cependant la liberté aux éditeurs et éditrices des sites, en l’absence de contrainte, de respecter ou non ces règles.</p><p>Les différents cas d’usages nous permettront d’éventuellement revenir sur cette décision.</p>
 
       notes: >-
         
@@ -496,7 +491,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Consolidation : la gestion technique des différents cas
+      Consolidation : la gestion technique des différents cas
     ranks:
       self: 3
     data:

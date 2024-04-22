@@ -44,8 +44,10 @@ header#document-header
             text-decoration: none
 .posts__page 
     header.hero
-        .post-categories li 
-            margin-left: 0
+        .post-categories
+            @include list-reset
+            li 
+                margin-left: 0
             a
                 @include h1
                 color: $color-text-alt

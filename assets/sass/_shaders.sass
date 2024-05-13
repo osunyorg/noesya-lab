@@ -1,12 +1,10 @@
 .container.shaders
     .content 
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+        @include media-breakpoint-up(lg)
+            @include grid(3)
         .glcanvas
-            max-width: 100%
             aspect-ratio: 1
-            margin: 10px
-            width: 400px
-            border:  2px solid $color-background-alt
-            border-radius: 500px
+            margin-bottom: $spacing-4
+            width: 100%
+            border:  1px solid $color-background-alt
+            border-radius: 100%

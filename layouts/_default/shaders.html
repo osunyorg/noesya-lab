@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ partial "pages/hero.html" . }}
+  {{ partial "hooks/after-page-hero.html" . }}
+  <div class="document-content">
+    <div class="container shaders">
+      <div class="content">
+        {{range .Params.shaders}}
+          {{ partial "shader.html" . }}
+        {{end}}
+        {{ partial "hooks/before-document-content-end.html" . }}
+      </div>
+    </div>
+  <script src="/assets/js/shaders/webgl.js" type="module" defer async></script>
+{{ end }}

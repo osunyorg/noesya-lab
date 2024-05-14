@@ -32,19 +32,15 @@ vec2 random2(vec2 st){
 
 void main() {
     vec2 st = v_position; // 0 -> 1
-    float z = 60.0;
+    float z = 50.0;
     float _angle = 2.3;
     float n = 0.3;
-
-
-
     st *= u_resolution/u_resolution.y;
     float df = 0.00001*u_time;
     st.x += df*2.0;
     st.y -= df*3.0;
     st = mat2(cos(df+_angle),-sin(df+_angle),
     sin(df+_angle),cos(df+_angle)) * st;
-    
     vec2 grid = st*z;
     vec2 f = floor(grid);
     grid.x += 0.1*random2(vec2(f.y)).x;
@@ -56,10 +52,9 @@ void main() {
     float r = 0.5;
     vec2 rand = random2(random2(vec2(f.y)) * random2(vec2(f.x)));
     float yn = step(1.-n/2., rand.x);
-    float d = length(grid)*2.0;
+    float d = length(grid)*3.0;
     r = (r*(rand.y))*yn;
-    c *= 1.-smoothstep(r-0.3,r,d/2.0);
-    
+    c *= 1.-smoothstep(r-2.0*z/(u_resolution.x), r, d/2.0);
     gl_FragColor = vec4(c, 1.0);
 }
 `;

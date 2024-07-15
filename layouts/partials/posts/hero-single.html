@@ -12,8 +12,11 @@
   <div class="container">
     <div class="content">
       {{ if .Params.posts_categories }}
-        {{ partial "posts/categories.html" . }}
-    {{ end }}
+        {{ partial "commons/categories" ( dict
+          "context" .
+          "kind" "post"
+        )}}
+      {{ end }}
       <h1>{{ partial "PrepareHTML" $title }}</h1>
       
     </div>

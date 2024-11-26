@@ -5,8 +5,10 @@ items:
   target: "/mentions-legales/"
   kind: page
   children: []
+  file: content/fr/pages/mentions-legales/_index.html
 - title: Politique de sobriété
   target: https://www.noesya.coop/politique-de-sobriete
   kind: url
   children: []
+  file: content/fr/pages/politique-de-confidentialite/_index.html
 

@@ -4,18 +4,21 @@ items:
 - title: R&D
   target: "/publications/rd/"
   kind: category
+  new_tab: false
   children: []
   path: "/posts_categories/rd"
   file: content/fr/posts_categories/rd/_index.html
 - title: Masterclass
   target: "/publications/masterclass/"
   kind: category
+  new_tab: false
   children: []
   path: "/posts_categories/masterclass"
   file: content/fr/posts_categories/masterclass/_index.html
 - title: Points de vue
   target: "/publications/points-de-vue/"
   kind: category
+  new_tab: false
   children: []
   path: "/posts_categories/points-de-vue"
   file: content/fr/posts_categories/points-de-vue/_index.html

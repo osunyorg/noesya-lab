@@ -4,3 +4,9 @@ enableRobotsTXT: true
 removePathAccents: true
 params:
   ecosystem: lab
+  posts:
+    index:
+      layout: list
+      options:
+        image: false
+        summary: false

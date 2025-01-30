@@ -1,0 +1,69 @@
+@include media-breakpoint-up(desktop)
+    .document-content
+        min-height: 550px
+    .posts__page:not(.full-width),
+    .pages__section:not(.full-width)
+        .toc
+            ol
+                align-items: end
+        .block
+            .block-content
+                padding-left: 0 !important
+                padding-right: offset(4)
+            &-title
+                h2
+                    padding-left: 0 !important
+                    width: columns(8)
+        .post-sidebar
+            margin-right: grid-external-space()
+            right: 0
+            left: unset
+            > div
+                position: relative
+                height: calc(100% - calc(#{$spacing-5} + #{$spacing-3}))
+                top: 0 !important
+                .toc-container
+                    height: unset
+                    position: sticky
+                    top: calc(#{$spacing-5} + #{$spacing-3})
+                    transition: top .3s
+                .toc-content
+                    padding-bottom: 0
+            // Remove categories
+            .post-infos
+                > li:first-of-type
+                    display: none
+            .post-infos,
+            .posts-taxonomies
+                text-align: right
+                > li
+                    display: block
+                    > span
+                        display: block
+                        margin-bottom: $spacing-2
+            .toc-content
+                text-align: right
+                .toc-pages
+                    ol
+                        align-items: flex-end
+            .post-infos li,
+            .toc-container
+                border-top: none
+            .post-infos li:last-child
+                padding-bottom: 0
+            .toc-container
+                padding-top: $spacing-3
+    .pages__section:not(.full-width)
+        .toc-container
+            margin-right: grid-external-space()
+            right: 0
+            left: unset
+            text-align: right
+            > div
+                top: calc(#{$spacing-5} + #{$spacing-3})
+            .toc-pages
+                ol
+                    align-items: flex-end
+    .posts--list
+        .post
+            display: block !important

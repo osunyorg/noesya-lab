@@ -1,0 +1,24 @@
+.organizations__section
+    .organizations
+        @include grid(4)
+.organizations,
+.block-organizations--grid .grid.organizations
+    @include in-page-with-or-without-sidebar
+        @include media-breakpoint-up(desktop)
+            grid-column-gap: var(--grid-gutter) !important
+    .organization 
+        .organization-title
+            @include h4
+            font-family: $body-font-family
+            margin-top: $spacing-2
+            a::after
+                vertical-align: baseline
+        .media 
+            aspect-ratio: 1
+            filter: grayscale(1)
+            picture img
+                height: 50%
+                margin-left: 50%
+                margin-top: 50%
+                transform: translate(-50%, -50%)
+                width: 50%

@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark)
+    .page__home 
+        main
+            .hero
+                a
+                    @include link(white)
+                    .has-menu-opened &
+                        @include link($color-accent)
+    .hero
+        background: transparent
+    .nav-accessibility
+        a
+            color: $color-accent
+    .has-menu-opened
+        .posts_categories__term
+            .posts--list
+                .post
+                    a
+                        color: $color-accent
+    .posts__page
+        header.hero
+            .post-categories
+                li
+                    a
+                        color: transparentize(white, .45)
+                        .has-menu-opened  & 
+                            color: transparentize($color-accent, .45)

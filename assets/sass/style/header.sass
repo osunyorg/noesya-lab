@@ -1,0 +1,14 @@
+header#document-header 
+    .logo
+        align-items: center
+    @include media-breakpoint-up(desktop)
+        nav
+            .menu
+                padding-top: 239px
+header.hero
+    @include media-breakpoint-up(desktop)
+        .content > .hero-text
+            width: columns(8)
+    .post-categories
+        margin-top: $spacing-5
+

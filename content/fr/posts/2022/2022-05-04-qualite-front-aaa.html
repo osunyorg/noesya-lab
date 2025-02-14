@@ -19,6 +19,17 @@ meta:
     created_at: 2023-05-10T18:04:44+02:00
     updated_at: 2024-09-29T14:12:24+02:00
     published_at: 2022-05-04T00:00:00+02:00
+search:
+  id: "b82e4de7-c1b9-4c10-99de-abcc11b48eea"
+  url: "/publications/2022-05-04-qualite-front-aaa/"
+  kind: "Communication::Website::Post::Localization"
+  lang: "fr"
+  title: >-
+    Qualité front AAA
+  summary: >-
+    
+  body: >-
+    AAA (qualité supérieure) <br><br> <br>DescriptionBalisage purement sémantique avec utilisation de schema.org et aria.Outils :<br>Pas de Bootstrap.<br>Pas de purge parce qu'il n'y a rien à purger.<br>HTML :<br>Balisage sémantique<br>Utilisation des schemas (schema.org, itemtype et itemprop)<br>Utilisation des propriétés ARIA (https://www.w3.org/TR/html-aria/)<br>Classes CSS :<br>Utiliser en priorité les balises pures, sans classe.<br>S'appuyer sur l'arbre HTML pour les sélecteurs CSS : définir une limite de niveaux pour garder une bonne lisibilité / maintenabilité.<br>Limiter l'usage des classes aux cas où elles apportent du sens, sans pour autant diminuer la compréhension et la maintenabilité.<br>Aucune classe de présentation dans le DOM (row, col, large, mb-5...).<br>Utiliser des body classes indiquant la nature des pages pour du contexte.<br>Quand les balises pures et les body classes ne suffisent pas, ajouter des classes qui indiquent la nature des objets traités (post, person, author, product...)<br><br>    <br> <br><br><br><br><br><br><br>Exemple d’un menu <br><br> <br>   <a href="/">       <img>   </a>                       <ul>           <li>               <a href="/communs-numeriques">Communs numériques</a>           </li>            [...]       </ul>     <br><br><br><br><br><br>Faire des sélecteurs via des classes CSS ou des attributs HTML ? <br><br> <br>BreadcrumbLa question se pose pour le cas du breadcrumb :<br><br><br><br><br><br> <br>- .breadcrum+ ol[itemtype="https://schema.org/BreadcrumbList"]<br><br><br><br><br><br> <br>https://github.com/noesya/osuny-hugo-theme-AAA/pull/21L'argument de ne pas utiliser un sélecteur contenant une url (https://schema.org) ne tient pas, car selon le web de Tim Berners-Lee, une page web est un contrat dont l'URI ne doit pas changer.<br><br><br><br><br><br>Margin top ou bottom ? <br><br> <br>SolutionMargin-top : https://matthewjamestaylor.com/css-margin-top-vs-bottom
 
 breadcrumbs:
   - title: >-

@@ -15,3 +15,4 @@ allowed_domains:
   - "player.vimeo.com"
   - "vumbnail.com"
   - "www.trampoline.osuny.site"
+  - "trampolinedemo.netlify.app"

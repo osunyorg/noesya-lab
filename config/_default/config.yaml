@@ -3,8 +3,10 @@ _merge: deep
 params:
   ecosystem: lab
   posts:
+    date_format: "2006"
     index:
       layout: list
       options:
+        categories: false
         image: false
         summary: false

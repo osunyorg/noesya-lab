@@ -1,10 +1,10 @@
 ---
 title: >-
   L’insoutenable poids des vidéos qu’on ne regarde pas
-subtitle: >-
-  
-bodyclass: >-
-   
+
+
+
+
 url: "/publications/2023-10-11-linsoutenable-poids-des-videos-quon-ne-regarde-pas/"
 slug: "linsoutenable-poids-des-videos-quon-ne-regarde-pas"
 date: 2023-10-11T16:57:09+02:00
@@ -27,20 +27,16 @@ search:
   lang: "fr"
   title: >-
     L’insoutenable poids des vidéos qu’on ne regarde pas
-  summary: >-
-    
+
   body: >-
     <p>  <br>D’après le Shift Project, “le visionnage de vidéos en ligne a généré en 2018 plus de 300 MtCO2, soit autant de gaz à effet de serre que l’Espagne, ou près de 1 % des émissions mondiales.” Regarder des vidéos sur le Web a un impact, c’est tout sauf dématérialisé. Mais qu’en est-il des vidéos que l’on ne regarde pas ? </p>  <p> Intégrer une vidéo dans une page Web  <br>   <br>Dans la plupart des systèmes de gestion de contenu, on intègre une vidéo dans une page Web en s’appuyant sur des plateformes de diffusion vidéo, comme YouTube, Vimeo, Dailymotion ou Peertube. Pour ce faire, on colle l’adresse de la vidéo dans un champ de formulaire, et la suite est automatisée. Mais quel est l’impact de cette pratique sur le poids de la page ? Prenons  une page  gérée avec  Osuny , le commun numérique sur lequel nous travaillons. Sur cette page, ajoutons des vidéos provenant des 4 plateformes. Mesurons maintenant la page avec notre outil libre de diagnostic écologique, qui utilise Google Lighthouse.  </p>  <p>  </p>  <p>Diagnostic 1</p>  <p>   <br>La page pèse 2.82 Mo, et génère 76 requêtes à des ressources externes. La majeure partie de ces ressources provient de l’intégration YouTube, une petite partie des trois autres plateformes. Et pourtant, on n’a pas cliqué sur les vidéos, personne ne les a regardées. 2.82 Mo, c’est très lourd, mais 2.82 Mo pour rien, c’est particulièrement absurde.</p>  <p> Comprendre le problème  <br>   <br>Pourquoi une vidéo que l’on ne regarde pas est-elle si lourde ? Parce qu’on charge le player vidéo, un ensemble de ressources HTML, JS, CSS et images, qui permettent d’afficher une image avec un bouton “play”, et souvent d’autres informations plus ou moins utiles et esthétiques. Cette image s’appelle parfois un poster, parfois une vignette (thumbnail). Dans le cas de YouTube, ce player est très lourd et très intrusif, n’hésitant pas à générer des cookies pas forcément acceptés.</p>  <p> Alléger l’intégration  <br>   <br>Pour faire pareil, mais mieux, il suffirait d’utiliser juste l’image du poster, et de ne charger le player que quand la personne a cliqué sur le bouton “play”.  Marie Gautron  a très bien expliqué l’approche dans un article titré “ Réduisez l'impact environnemental des vidéos YouTube sur votre site web avec des vignettes. ” Nous avons adopté cette approche (merci beaucoup Marie !) dans le thème Osuny. La première itération nous a permis de nous débarrasser des players YouTube, Dailymotion et Vimeo, et de passer à 537 ko. YouTube et Dailymotion proposent une URL très simple pour obtenir le poster correspondant à une vidéo. Pour Vimeo, ce n’est pas si simple, mais le service gratuit Vumbnail permet de compenser le manque.</p>  <p>  </p>  <p>Diagnostic 2  </p>  <p>   <br>Malheureusement, nous n’avons pas trouvé de solution simple permettant d’obtenir un poster avec Peertube. Nous avons donc fait le choix d’afficher un bouton play sur un fond noir, avec le titre et la transcription de la vidéo si tout est rempli correctement. Cela permet de ramener la page à 221 ko.</p>  <p>  </p>  <p>Diagnostic 3  </p>  <p> Et voilà !  <br>   <br>Quand la personne souhaite voir la vidéo et clique sur le bouton “play”, on déclenche en JavaScript le téléchargement du player et la lecture de la vidéo. Là, c’est trop lourd, surtout YouTube, mais au moins ce n’est pas pour rien ! Et au passage, bénéfice collatéral, les boutons sont beaucoup plus jolis et unifiés, et personnalisables en fonction des choix de design du site concerné. <br>Sources Réduisez l'impact environnemental des vidéos YouTube sur votre site web avec des vignettes Climat : l'insoutenable usage de la vidéo en ligne   Vumbnail   </p>  
 
 breadcrumbs:
-  - title: >-
-      noesya
+  - title: "noesya"
     path: "/"
-  - title: >-
-      Publications
+  - title: "Publications"
     path: "/publications/"
-  - title: >-
-      L’insoutenable poids des vidéos qu’on ne regarde pas
+  - title: "L’insoutenable poids des vidéos qu’on ne regarde pas"
 
 design:
   full_width: false
@@ -54,21 +50,19 @@ translationKey: communication-website-post-0a568d64-3c13-460f-a7e7-2a074f88d605
 
 
 
-meta_description: >-
-  
 
-summary: >-
-  
 
 header_cta:
 
 posts_categories:
   - "rd"
 taxonomies:
-  - name: >-
-      Catégories
-    slug: ""
+  - permalink: ""
     path: ""
+    slug: ""
+    file: ""
+    name: >-
+      Catégories
     categories:
       - permalink: "/publications/rd/"
         path: "/posts_categories/rd"
@@ -85,28 +79,20 @@ contents_reading_time:
 contents:
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>D’après le Shift Project, “le visionnage de vidéos en ligne a généré en 2018 plus de 300 MtCO2, soit autant de gaz à effet de serre que l’Espagne, ou près de 1 % des émissions mondiales.” Regarder des vidéos sur le Web a un impact, c’est tout sauf dématérialisé. Mais qu’en est-il des vidéos que l’on ne regarde pas ? </p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -125,87 +111,64 @@ contents:
         value: >-
           Intégrer une vidéo dans une page Web
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Dans la plupart des systèmes de gestion de contenu, on intègre une vidéo dans une page Web en s’appuyant sur des plateformes de diffusion vidéo, comme YouTube, Vimeo, Dailymotion ou Peertube. Pour ce faire, on colle l’adresse de la vidéo dans un champ de formulaire, et la suite est automatisée. Mais quel est l’impact de cette pratique sur le poids de la page ? Prenons <a href="https://example.osuny.org/fr/blocks/blocks-de-base/videos/" target="_blank" rel="noreferrer">une page <span class="sr-only">(lien externe)</span></a> gérée avec <a href="https://www.osuny.org/" target="_blank" rel="noreferrer">Osuny <span class="sr-only">(lien externe)</span></a>, le commun numérique sur lequel nous travaillons. Sur cette page, ajoutons des vidéos provenant des 4 plateformes. Mesurons maintenant la page avec notre outil libre de diagnostic écologique, qui utilise Google Lighthouse.  </p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: image
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
-      text: >-
-        
 
       image:
         id: "3dbfd339-eaa1-4226-b499-c537734fee12"
-        file: "3dbfd339-eaa1-4226-b499-c537734fee12"
-
-        alt: >-
-          
 
         credit: >-
           <p><a href="https://diagnostic.noesya.coop/befc5dea-5e67-40c4-82ac-39fe980a6e08" target="_blank" rel="noreferrer">Diagnostic 1 <span class="sr-only">(lien externe)</span></a></p>
 
 
-
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>La page pèse 2.82 Mo, et génère 76 requêtes à des ressources externes. La majeure partie de ces ressources provient de l’intégration YouTube, une petite partie des trois autres plateformes. Et pourtant, on n’a pas cliqué sur les vidéos, personne ne les a regardées. 2.82 Mo, c’est très lourd, mais 2.82 Mo pour rien, c’est particulièrement absurde.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -224,34 +187,27 @@ contents:
         value: >-
           Comprendre le problème
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Pourquoi une vidéo que l’on ne regarde pas est-elle si lourde ? Parce qu’on charge le player vidéo, un ensemble de ressources HTML, JS, CSS et images, qui permettent d’afficher une image avec un bouton “play”, et souvent d’autres informations plus ou moins utiles et esthétiques. Cette image s’appelle parfois un poster, parfois une vignette (thumbnail). Dans le cas de YouTube, ce player est très lourd et très intrusif, n’hésitant pas à générer des cookies pas forcément acceptés.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -270,114 +226,83 @@ contents:
         value: >-
           Alléger l’intégration
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Pour faire pareil, mais mieux, il suffirait d’utiliser juste l’image du poster, et de ne charger le player que quand la personne a cliqué sur le bouton “play”. <a href="https://www.linkedin.com/in/mariegautron/" target="_blank" rel="noreferrer">Marie Gautron <span class="sr-only">(lien externe)</span></a> a très bien expliqué l’approche dans un article titré “<a href="https://slash.troopers.coop/article/reduire-impact-environnemental-videos-youtube" target="_blank" rel="noreferrer">Réduisez l'impact environnemental des vidéos YouTube sur votre site web avec des vignettes. <span class="sr-only">(lien externe)</span></a>” Nous avons adopté cette approche (merci beaucoup Marie !) dans le thème Osuny. La première itération nous a permis de nous débarrasser des players YouTube, Dailymotion et Vimeo, et de passer à 537 ko. YouTube et Dailymotion proposent une URL très simple pour obtenir le poster correspondant à une vidéo. Pour Vimeo, ce n’est pas si simple, mais le service gratuit Vumbnail permet de compenser le manque.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: image
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
-      text: >-
-        
 
       image:
         id: "45c038d3-2b21-4e53-9774-b615efdf2c89"
-        file: "45c038d3-2b21-4e53-9774-b615efdf2c89"
-
-        alt: >-
-          
 
         credit: >-
           <p><a href="https://diagnostic.noesya.coop/0d6a9946-6a84-479b-b9c0-160579584ea7" target="_blank" rel="noreferrer">Diagnostic 2 <span class="sr-only">(lien externe)</span></a> </p>
 
 
-
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Malheureusement, nous n’avons pas trouvé de solution simple permettant d’obtenir un poster avec Peertube. Nous avons donc fait le choix d’afficher un bouton play sur un fond noir, avec le titre et la transcription de la vidéo si tout est rempli correctement. Cela permet de ramener la page à 221 ko.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: image
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
-      text: >-
-        
 
       image:
         id: "de692b7a-dc8d-4738-8d0f-5ef5c5b33604"
-        file: "de692b7a-dc8d-4738-8d0f-5ef5c5b33604"
-
-        alt: >-
-          
 
         credit: >-
           <p><a href="https://diagnostic.noesya.coop/b739814b-5f26-415b-812d-96f9df496965" target="_blank" rel="noreferrer">Diagnostic 3 <span class="sr-only">(lien externe)</span></a> </p>
-
 
 
   - kind: block
@@ -395,51 +320,42 @@ contents:
         value: >-
           Et voilà !
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Quand la personne souhaite voir la vidéo et clique sur le bouton “play”, on déclenche en JavaScript le téléchargement du player et la lecture de la vidéo. Là, c’est trop lourd, surtout YouTube, mais au moins ce n’est pas pour rien ! Et au passage, bénéfice collatéral, les boutons sont beaucoup plus jolis et unifiés, et personnalisables en fonction des choix de design du site concerné.</p>
-
       notes: >-
         <p>Sources<br><a href="https://slash.troopers.coop/article/reduire-impact-environnemental-videos-youtube" target="_blank" rel="noreferrer">Réduisez l'impact environnemental des vidéos YouTube sur votre site web avec des vignettes <span class="sr-only">(lien externe)</span></a><br><a href="https://theshiftproject.org/wp-content/uploads/2019/07/Dossier-de-presse_Linsoutenable-usage-de-la-vid%C3%A9o.pdf" target="_blank" rel="noreferrer">Climat : l'insoutenable usage de la vidéo en ligne <span class="sr-only">(lien externe)</span></a> <br><a href="https://vumbnail.com" target="_blank" rel="noreferrer">Vumbnail <span class="sr-only">(lien externe)</span></a> </p><ul>  </ul><ul> </ul>
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: persons
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
       children: 3
     top:
       active: false
+
     data:
-      description: >-
-        
 
       layout: grid
       options:
@@ -453,15 +369,11 @@ contents:
           path: "/persons/olivia-simonet"
           slug: "olivia-simonet"
           file: "content/fr/persons/olivia-simonet.html"
-          role: >-
-            
 
         - permalink: "/equipe/arnaud-levy/"
           path: "/persons/arnaud-levy"
           slug: "arnaud-levy"
           file: "content/fr/persons/arnaud-levy.html"
-          role: >-
-            
 
       quantity: 2
 

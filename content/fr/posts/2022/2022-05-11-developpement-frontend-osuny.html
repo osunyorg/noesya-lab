@@ -1,10 +1,10 @@
 ---
 title: >-
   Développement front-end Osuny
-subtitle: >-
-  
-bodyclass: >-
-   
+
+
+
+
 url: "/publications/2022-05-11-developpement-frontend-osuny/"
 slug: "developpement-frontend-osuny"
 date: 2022-05-11T00:00:00+02:00
@@ -27,20 +27,16 @@ search:
   lang: "fr"
   title: >-
     Développement front-end Osuny
-  summary: >-
-    
+
   body: >-
     <p>Objectifs  <br>   <br>Les sites produits avec Osuny doivent répondre, autant que possible, aux critères énoncés dans l'article  Qualité frontend : à la recherche du AAA . Les sites Osuny s'appuient sur un thème, qui encapsule les fonctionnalités et les bonnes pratiques d'accessibilité et d'éco-conception. Le thème doit être simple à maintenir pour l'équipe cœur :  <br> aussi peu de dépendances que possible  <br> organisé de façon systématique  <br> correctement documenté  <br> peu entrelacé, pour éviter les usines à gaz / assiettes de spaghetti  <br> Les sites doivent être simples à développer et à maintenir pour toute la communauté :  <br> facile à apprendre (bonne documentation, principes simples)  <br> avec de bonnes conventions par défaut  <br> avec un code et un style lisible  <br> configurable simplement  <br> facile à mettre à jour </p>  <p> Situation actuelle  <br>   <br>Nous avons développé le thème en utilisant Bootstrap, afin de rendre l'adoption facile. Bootstrap crée un fichier trop lourd pour être utilisé tel quel. Nous avons donc mis en place PurgeCSS, qui permet d'examiner le code HTML, de lister les classes nécessaires et de supprimer le CSS inutile. En développant les sites pour se rapprocher au maximum du triple A, nous avons enlevé le balisage Bootstrap. La présence de Bootstrap ne facilite pas vraiment le travail pour les développeurs tiers. Par ailleurs, cela a rendu PurgeCSS difficile à stabiliser, ce qui crée une situation instable en production. Le code que l'on écrit est souvent supprimé en prod. On se situe actuellement entre le double et le triple A, avec un code HTML léger, assez pur, et sémantique. Cependant, en vidant le html des classes (et dividers supplémentaires) Bootstrap, via l'usage d'extends et des mixins sass, le style s'en trouve moins lisible donc moins maintenable.</p>  <p> Questions  <br>   <br>Comment faire fonctionner correctement PurgeCSS ? Faut-il simplifier l'usage de Bootstrap au détriment de la qualité du HTML pour favoriser la maintenabilité et l'accès aux autres développeurs ? Faut-il utiliser Bootstrap ?</p>  <p> PurgeCSS  <br>   <br>Pour simplifier la contribution par d'autres développeurs, on s'appuie sur Bootstrap. Mais pour optimiser, on allège le poid de la feuille de style avec Purge. Objectifs :  <br> vider la feuille de style avec Purge (PostCSS)  <br> n'avoir qu'un setup de PostCSS pour tous les sites  <br> Problèmes rencontrés :  <br> un fichier spécifique par site pour éviter de purger les sélecteurs nécessaires  <br> actuellement purgecss se base sur les layouts hugo avant génération  <br> s'appuyer sur hugo_stats.json pour purger ne fonctionne pas en l'état car nous utilisons des sélecteurs CSS s'appuyant sur les attributs html (exemple : header[role="banner"])  <br> dans le workflow de build Hugo, le CSS est généré via PostCSS en même temps que le build du HTML, ça ne permet pas de s'appuyer sur le build (/public) html final pour lancer un purge.  <br> Pistes :  <br> lancer purge via npm après le build hugo, cela fonctionne mais cela peut rallonger le temps de compilation total (en fonction de la quantité de fichiers html générés)  <br> enlever les sélecteurs de classes par attribut et utiliser hugo_stats.json pour purger. </p>  <p> Bootstrap ?  <br>   <br>La situation actuelle n'est satisfaisante pour personne :  <br> le code HTML est très beau, mais incompréhensible pour un utilisateur de Bootstrap  <br> le code SASS est complexe et entrelacé, pas documenté, difficile à utiliser pour tout le monde  <br> Pour maintenir la qualité du code HTML, nous tentons un prototype sans Bootstrap, avec du code SASS custom. Le projet constitue le  Thème Osuny AAA .</p>
 
 breadcrumbs:
-  - title: >-
-      noesya
+  - title: "noesya"
     path: "/"
-  - title: >-
-      Publications
+  - title: "Publications"
     path: "/publications/"
-  - title: >-
-      Développement front-end Osuny
+  - title: "Développement front-end Osuny"
 
 design:
   full_width: false
@@ -54,21 +50,19 @@ translationKey: communication-website-post-49196bd7-576a-41d1-aa18-685cea4f40ce
 
 
 
-meta_description: >-
-  
 
-summary: >-
-  
 
 header_cta:
 
 posts_categories:
   - "rd"
 taxonomies:
-  - name: >-
-      Catégories
-    slug: ""
+  - permalink: ""
     path: ""
+    slug: ""
+    file: ""
+    name: >-
+      Catégories
     categories:
       - permalink: "/publications/rd/"
         path: "/posts_categories/rd"
@@ -98,34 +92,27 @@ contents:
         value: >-
           Objectifs
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Les sites produits avec Osuny doivent répondre, autant que possible, aux critères énoncés dans l'article <a href="https://noesya-lab-osuny.netlify.app/publications/2022-05-09-qualite-frontend/">Qualité frontend : à la recherche du AAA</a>. Les sites Osuny s'appuient sur un thème, qui encapsule les fonctionnalités et les bonnes pratiques d'accessibilité et d'éco-conception.</p><p>Le thème doit être simple à maintenir pour l'équipe cœur :</p><ul> <li>aussi peu de dépendances que possible</li> <li>organisé de façon systématique</li> <li>correctement documenté</li> <li>peu entrelacé, pour éviter les usines à gaz / assiettes de spaghetti</li> </ul><p>Les sites doivent être simples à développer et à maintenir pour toute la communauté :</p><ul> <li>facile à apprendre (bonne documentation, principes simples)</li> <li>avec de bonnes conventions par défaut</li> <li>avec un code et un style lisible</li> <li>configurable simplement</li> <li>facile à mettre à jour</li> </ul>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -144,34 +131,27 @@ contents:
         value: >-
           Situation actuelle
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Nous avons développé le thème en utilisant Bootstrap, afin de rendre l'adoption facile. Bootstrap crée un fichier trop lourd pour être utilisé tel quel. Nous avons donc mis en place PurgeCSS, qui permet d'examiner le code HTML, de lister les classes nécessaires et de supprimer le CSS inutile.</p><p>En développant les sites pour se rapprocher au maximum du triple A, nous avons enlevé le balisage Bootstrap. La présence de Bootstrap ne facilite pas vraiment le travail pour les développeurs tiers.</p><p>Par ailleurs, cela a rendu PurgeCSS difficile à stabiliser, ce qui crée une situation instable en production. Le code que l'on écrit est souvent supprimé en prod.</p><p>On se situe actuellement entre le double et le triple A, avec un code HTML léger, assez pur, et sémantique. Cependant, en vidant le html des classes (et dividers supplémentaires) Bootstrap, via l'usage d'extends et des mixins sass, le style s'en trouve moins lisible donc moins maintenable.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -190,34 +170,27 @@ contents:
         value: >-
           Questions
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Comment faire fonctionner correctement PurgeCSS ?</p><p>Faut-il simplifier l'usage de Bootstrap au détriment de la qualité du HTML pour favoriser la maintenabilité et l'accès aux autres développeurs ?</p><p>Faut-il utiliser Bootstrap ?</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -236,34 +209,27 @@ contents:
         value: >-
           PurgeCSS
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Pour simplifier la contribution par d'autres développeurs, on s'appuie sur Bootstrap. Mais pour optimiser, on allège le poid de la feuille de style avec Purge.</p><p>Objectifs :</p><ul> <li>vider la feuille de style avec Purge (PostCSS)</li> <li>n'avoir qu'un setup de PostCSS pour tous les sites</li> </ul><p>Problèmes rencontrés :</p><ul> <li>un fichier spécifique par site pour éviter de purger les sélecteurs nécessaires</li> <li>actuellement purgecss se base sur les layouts hugo avant génération</li> <li>s'appuyer sur hugo_stats.json pour purger ne fonctionne pas en l'état car nous utilisons des sélecteurs CSS s'appuyant sur les attributs html (exemple : header[role="banner"])</li> <li>dans le workflow de build Hugo, le CSS est généré via PostCSS en même temps que le build du HTML, ça ne permet pas de s'appuyer sur le build (/public) html final pour lancer un purge.</li> </ul><p>Pistes :</p><ul> <li>lancer purge via npm après le build hugo, cela fonctionne mais cela peut rallonger le temps de compilation total (en fonction de la quantité de fichiers html générés)</li> <li>enlever les sélecteurs de classes par attribut et utiliser hugo_stats.json pour purger.</li> </ul>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -282,34 +248,27 @@ contents:
         value: >-
           Bootstrap ?
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>La situation actuelle n'est satisfaisante pour personne :</p><ul> <li>le code HTML est très beau, mais incompréhensible pour un utilisateur de Bootstrap</li> <li>le code SASS est complexe et entrelacé, pas documenté, difficile à utiliser pour tout le monde</li> </ul><p>Pour maintenir la qualité du code HTML, nous tentons un prototype sans Bootstrap, avec du code SASS custom. Le projet constitue le <a href="https://github.com/noesya/osuny-hugo-theme-AAA">Thème Osuny AAA</a>.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 

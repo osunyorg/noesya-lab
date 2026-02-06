@@ -1,10 +1,10 @@
 ---
 title: >-
   Qualité front AAA
-subtitle: >-
-  
-bodyclass: >-
-   
+
+
+
+
 url: "/publications/2022-05-04-qualite-front-aaa/"
 slug: "qualite-front-aaa"
 date: 2022-05-04T00:00:00+02:00
@@ -27,20 +27,16 @@ search:
   lang: "fr"
   title: >-
     Qualité front AAA
-  summary: >-
-    
+
   body: >-
     <p>AAA (qualité supérieure)  <br>   <br>Description Balisage purement sémantique avec utilisation de  schema.org  et aria. Outils :  <br> Pas de Bootstrap.  <br> Pas de purge parce qu'il n'y a rien à purger.  <br> HTML :  <br> Balisage sémantique  <br> Utilisation des schemas (schema.org, itemtype et itemprop)  <br> Utilisation des propriétés ARIA ( https://www.w3.org/TR/html-aria/ )  <br> Classes CSS :  <br> Utiliser en priorité les balises pures, sans classe.  <br> S'appuyer sur l'arbre HTML pour les sélecteurs CSS : définir une limite de niveaux pour garder une bonne lisibilité / maintenabilité.  <br> Limiter l'usage des classes aux cas où elles apportent du sens, sans pour autant diminuer la compréhension et la maintenabilité.  <br> Aucune classe de présentation dans le DOM (row, col, large, mb-5...).  <br> Utiliser des body classes indiquant la nature des pages pour du contexte.  <br> Quand les balises pures et les body classes ne suffisent pas, ajouter des classes qui indiquent la nature des objets traités (post, person, author, product...)  <br>  <br>     <br> </p>  <p> Exemple d’un menu  <br>   <br>    <a href="/">        <img>    </a>                            </p><ul>            <li>                <a href="/communs-numeriques">Communs numériques</a>            </li>             [...]        </ul>         <p> Faire des sélecteurs via des classes CSS ou des attributs HTML ?  <br>   <br>Breadcrumb La question se pose pour le cas du breadcrumb :</p>  <p>   <br>- .breadcrum + ol[itemtype="https://schema.org/BreadcrumbList"]</p>  <p>   <br>https://github.com/noesya/osuny-hugo-theme-AAA/pull/21 L'argument de ne pas utiliser un sélecteur contenant une url (https://schema.org) ne tient pas, car selon le web de Tim Berners-Lee, une page web est un contrat dont l'URI ne doit pas changer.</p>  <p> Margin top ou bottom ?  <br>   <br>Solution Margin-top : https://matthewjamestaylor.com/css-margin-top-vs-bottom</p>
 
 breadcrumbs:
-  - title: >-
-      noesya
+  - title: "noesya"
     path: "/"
-  - title: >-
-      Publications
+  - title: "Publications"
     path: "/publications/"
-  - title: >-
-      Qualité front AAA
+  - title: "Qualité front AAA"
 
 design:
   full_width: false
@@ -54,11 +50,7 @@ translationKey: communication-website-post-9decfef3-1597-4003-b4a9-f5dd541cf626
 
 
 
-meta_description: >-
-  
 
-summary: >-
-  
 
 header_cta:
 
@@ -83,34 +75,27 @@ contents:
         value: >-
           AAA (qualité supérieure)
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p><i>Description</i></p><p>Balisage purement sémantique avec utilisation de <a href="http://schema.org/">schema.org</a> et aria.</p><p><i>Outils :</i></p><ul> <li>Pas de Bootstrap.</li> <li>Pas de purge parce qu'il n'y a rien à purger.</li> </ul><p><i>HTML :</i></p><ul> <li>Balisage sémantique</li> <li>Utilisation des schemas (schema.org, itemtype et itemprop)</li> <li>Utilisation des propriétés ARIA (<a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>)</li> </ul><p><i>Classes CSS :</i></p><ul> <li>Utiliser en priorité les balises pures, sans classe.</li> <li>S'appuyer sur l'arbre HTML pour les sélecteurs CSS : définir une limite de niveaux pour garder une bonne lisibilité / maintenabilité.</li> <li>Limiter l'usage des classes aux cas où elles apportent du sens, sans pour autant diminuer la compréhension et la maintenabilité.</li> <li>Aucune classe de présentation dans le DOM (row, col, large, mb-5...).</li> <li>Utiliser des body classes indiquant la nature des pages pour du contexte.</li> <li>Quand les balises pures et les body classes ne suffisent pas, ajouter des classes qui indiquent la nature des objets traités (post, person, author, product...)</li> </ul>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -129,34 +114,27 @@ contents:
         value: >-
           Exemple d’un menu
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: alt_background
       text: >-
         <p>&lt;header role="banner"&gt;<br>   &lt;a href="/"&gt;<br>       &lt;img src="https://assets.noesya.coop/images/logos/logo-noesya.svg"<br>                alt="noesya"width="100"height="26"&gt;<br>   &lt;/a&gt;<br>   &lt;button aria-label="Ouvrir / Fermer le menu"&gt;<br>       &lt;!-- SVG / IMG / ::after ::before / ... --&gt;<br>   &lt;/button&gt;<br>   &lt;nav role="navigation" aria-label="Navigation principale"&gt;<br>       &lt;ul&gt;<br>           &lt;li&gt;<br>               &lt;a href="/communs-numeriques"&gt;Communs numériques&lt;/a&gt;<br>           &lt;/li&gt;<br>            [...]<br>       &lt;/ul&gt;<br>   &lt;/nav&gt;<br>&lt;/header&gt;  </p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -175,88 +153,65 @@ contents:
         value: >-
           Faire des sélecteurs via des classes CSS ou des attributs HTML ?
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p><i>Breadcrumb</i></p><p>La question se pose pour le cas du breadcrumb :</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: alt_background
       text: >-
         <p>- .breadcrum<br>+ ol[itemtype="https://schema.org/BreadcrumbList"]</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>https://github.com/noesya/osuny-hugo-theme-AAA/pull/21</p><p>L'argument de ne pas utiliser un sélecteur contenant une url (https://schema.org) ne tient pas, car selon le web de Tim Berners-Lee, une page web est un contrat dont l'URI ne doit pas changer.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -275,34 +230,27 @@ contents:
         value: >-
           Margin top ou bottom ?
         heading: 2
+
     data:
       layout: classic
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 3
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p><i>Solution</i></p><p>Margin-top : https://matthewjamestaylor.com/css-margin-top-vs-bottom</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 

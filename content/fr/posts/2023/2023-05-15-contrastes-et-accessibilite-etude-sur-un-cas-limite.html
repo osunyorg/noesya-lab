@@ -32,11 +32,14 @@ search:
     <p>  <br>Le footer des sites noesya.coop contient une liste de tous les sites de l’écosystème : celui sur lequel on se trouve actuellement est en blanc pur (en light mode) ou en noir pur (en dark mode), tandis que ceux disponibles sont d’une couleur légèrement plus claire, et ceux indisponibles d’une couleur plus claire encore. Nous nous intéressons dans cet article au troisième cas, les sites qui ne sont pas encore disponibles, mais dont on annonce discrètement l’existence future.</p>  <p>  </p>  <p>Footer de l'écosystème noesya (light mode)</p>  <p>Footer de l'écosystème noesya (dark mode)</p>  <p> Résultats des tests du WCAG Contrast checker  <br>  </p>  <p>En dark mode, le contraste est insuffisant (2.52) et ne respecte pas les critères AA et AAA du WCAG.</p>  <p>En light mode, le contraste est insuffisant (1.85) et ne respecte pas les critères AA et AAA du WCAG.</p>  <p>   <br>De fait, en raison de nos choix de design, ces derniers ne respectent pas le ratio des critères AA et AAA fixés par le  Web Content Accessibility Guidelines  (WCAG), le référentiel international en matière d'accessibilité Web. Le  critère 1.4.6  ( Contrast - Enhanced ) indique en effet ceci :</p>  <p>   <br>The visual presentation of text and images of text has a contrast ratio of at least 7:1.</p>  <p>   <br>Néanmoins, il ne s’agit en réalité ni d’un échec, ni d’une dérogation.</p>  <p> Choix graphiques et méthode technique  <br>   <br>Dans le footer, nous utilisons des liens pour les sites déjà en ligne, et des balises span pour ceux qui ne le sont pas. Le plus petit niveau de contraste indique de façon claire l’indisponibilité de ces éléments, ce qui est complété par un attribut title “Ce site sera disponible bientôt...”. Ainsi, que ce soit visuellement ou vocalement, l’information de l’indisponibilité est bien restituée. Cela dit, le sujet de la couleur reste important, car le critère ci-dessus implique un respect de ratio important. Cependant, la suite du descriptif du critère 1.4.6 indique ceci : </p>  <p>   <br>The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: Incidental Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</p>  <p>   <br>Il semble ainsi nécessaire de comprendre la définition, selon le WCAG, d’un composant UI (user interface component) :</p>  <p>   <br>A part of the content that is perceived by users as a single control for a distinct function. Note : Multiple user interface components may be implemented as a single programmatic element. "Components" here is not tied to programming techniques, but rather to what the user perceives as separate controls.</p>  <p>   <br>Étant donné qu’il s’agit d’un élément perçu comme un lien indisponible et malgré l’absence de comportement programmatique particulier, notre span grisé semble correspondre à cette définition. Dès lors, il semble que cet usage correspond aux exceptions citées en préambule du critère 1.4.6. Une idée confirmée par une exception au  critère 1.4.11  ( Non-text contrast ), qui précise ceci : </p>  <p>   <br>User Interface Components that are not available for user interaction (e.g., a disabled control in HTML) are not required to meet contrast requirements in WCAG 2.1. An inactive user interface component is visible but not currently operable. An example would be a submit button at the bottom of a form that is visible but cannot be activated until all the required fields in the form are completed.</p>  <p>   <br>Enfin, le RGAA confirme cette pratique dans un “cas particulier” du  critère 3.2  :</p>  <p>   <br>Le texte ou l’image de texte fait partie d’un élément d’interface sur lequel aucune action n’est possible (par exemple un bouton avec l’attribut disabled).</p>  <p>   <br>Il est important de noter que si le  RGAA  s’appuie essentiellement sur les critères A et AA du WCAG (les 50 critères retenus par la norme européenne de référence 1 ), la documentation officielle de ce dernier permet de s’assurer, comme montré plus haut, que l’on n’enfreint pas le niveau AAA des critères relatifs au contraste du contenu. <br>1. Voir  les directives sur l'accessibilité web de l'Union Européenne</p>  <p>  Pour aller plus loin : <br>Accessibility requirements for ICT products and services</p>  <p> Limites  <br>   <br>Un risque réel persiste tout de même et si le groupe de travail du WCAG n’a pas pu statuer sur un niveau de contraste minimal et acceptable pour les éléments inactifs (source :  issue #805 du WCAG 2.1 ), il est nécessaire de prendre en compte le fait que certaines personnes avec une vision faible ou des circonstances particulières (migraines, fatigues) pourraient devoir (et vouloir) plisser des yeux pour distinguer le gris foncé du noir ou le gris clair du blanc. Néanmoins, dans la mesure où un contraste plus fort donne l'impression que ces éléments indisponibles sont cliquables, il semble plus approprié de ne pas accentuer les couleurs. Il s'agit cependant d'un cas très particulier, peut être voué à être corrigé par les prochaines éditions des différents référentiels et interrogeant la nécessité même de ces informations.</p>
 
 breadcrumbs:
-  - title: "noesya"
+  - title: >-
+      noesya
     path: "/"
-  - title: "Publications"
+  - title: >-
+      Publications
     path: "/publications/"
-  - title: "Contrastes et accessibilité : étude sur un cas limite"
+  - title: >-
+      Contrastes et accessibilité : étude sur un cas limite
 
 design:
   full_width: false
@@ -110,6 +113,7 @@ contents:
       layout: grid
       images:
         - 
+          id: "107b19b8-c6b9-4fdf-bad3-38909a3681db"
           image:
             id: "107b19b8-c6b9-4fdf-bad3-38909a3681db"
 
@@ -117,6 +121,7 @@ contents:
           text: >-
             <p>Footer de l'écosystème noesya (light mode)</p>
         - 
+          id: "173188c7-086b-4d77-8052-3013f285098a"
           image:
             id: "173188c7-086b-4d77-8052-3013f285098a"
 
@@ -159,6 +164,7 @@ contents:
       layout: grid
       images:
         - 
+          id: "d22611cc-107f-4e57-afc7-8a3eaf46bf20"
           image:
             id: "d22611cc-107f-4e57-afc7-8a3eaf46bf20"
 
@@ -166,6 +172,7 @@ contents:
           text: >-
             <p>En dark mode, le contraste est insuffisant (2.52) et ne respecte pas les critères AA et AAA du WCAG.</p>
         - 
+          id: "4e0fcb95-42ab-4279-a942-6906ccef0ba8"
           image:
             id: "4e0fcb95-42ab-4279-a942-6906ccef0ba8"
 

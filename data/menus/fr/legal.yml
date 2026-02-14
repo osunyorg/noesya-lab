@@ -2,17 +2,21 @@
 title: Informations légales
 items:
 - title: Mentions légales
+  slug: mentions-legales
   target: "/mentions-legales/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/mentions-legales"
   file: content/fr/pages/mentions-legales/_index.html
 - title: Politique de sobriété
+  slug: politique-de-sobriete
   target: https://www.noesya.coop/politique-de-sobriete
   kind: url
   new_tab: true
   children: []
+  descendants_targets: []
   path: "/pages/politique-de-confidentialite"
   file: content/fr/pages/politique-de-confidentialite/_index.html
 

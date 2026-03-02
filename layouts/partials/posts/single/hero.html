@@ -5,7 +5,7 @@
 {{- $direction := "" -}}
 {{- $breadcrumb_is_after_hero := eq site.Params.breadcrumb.position "after-hero"  -}}
 {{ if $image }}
-  {{- $direction = partial "GetImageDirection" $image -}}
+  {{- $direction = partial "commons/image/helpers/GetDirection" $image -}}
 {{ end }}
 
 <header class="hero {{ if $image -}}hero--with-image hero--image-{{- $direction -}}{{- end }} {{ if $breadcrumb_is_after_hero -}} hero--no-margin {{- end }}">

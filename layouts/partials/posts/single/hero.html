@@ -17,7 +17,7 @@
           "kind" "post"
         )}}
       {{ end }}
-      <h1>{{ partial "PrepareHTML" $title }}</h1>
+      <h1>{{ safeHTML $title }}</h1>
       
     </div>
     {{- if eq site.Params.breadcrumb.position "hero-end" -}}

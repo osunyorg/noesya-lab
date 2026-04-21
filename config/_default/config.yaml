@@ -10,3 +10,6 @@ params:
         categories: false
         image: false
         summary: false
+    single:
+      summary:
+        position: content

@@ -1,37 +1,22 @@
-{{- $sizes := site.Params.image_sizes.sections.posts.hero_single -}}
-{{- $image := .Params.image -}}
-{{- $title := .Title -}}
-
-{{- $direction := "" -}}
-{{- $breadcrumb_is_after_hero := eq site.Params.breadcrumb.position "after-hero"  -}}
-{{ if $image }}
-  {{- $direction = partial "commons/image/helpers/GetDirection" $image -}}
-{{ end }}
-
-<header class="hero {{ if $image -}}hero--with-image hero--image-{{- $direction -}}{{- end }} {{ if $breadcrumb_is_after_hero -}} hero--no-margin {{- end }}">
+{{ $title := partial "header/helpers/GetTitle" . }}
+{{ $hero := (dict
+  "title" $title
+  "context" .
+) }}
+{{ $class := partial "header/hero/helpers/GetClass" $hero }}
+<header class="{{ $class }}">
   <div class="container">
     <div class="content">
       {{ if .Params.posts_categories }}
-        {{ partial "commons/categories" ( dict
+        {{ partial "commons/categories" (dict
           "context" .
           "kind" "post"
-        )}}
+        ) }}
       {{ end }}
-      <h1>{{ safeHTML $title }}</h1>
-      
+      <div class="hero-text">
+        {{ partial "header/hero/content/text.html" $hero }}
+        {{ partial "header/hero/content/actions.html" $hero }}
+      </div>
     </div>
-    {{- if eq site.Params.breadcrumb.position "hero-end" -}}
-      {{- if .breadcrumb | default true -}}
-        {{ partial "header/breadcrumbs.html" .context }}
-      {{- end -}}
-    {{- end -}}
   </div>
 </header>
-
-{{- if $breadcrumb_is_after_hero -}}
-  {{- if .breadcrumb | default true -}}
-    <div class="container breadcrumb-container">
-      {{ partial "header/breadcrumbs.html" .context }}
-    </div>
-  {{- end -}}
-{{- end -}}

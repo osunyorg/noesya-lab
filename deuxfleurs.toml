@@ -27,7 +27,7 @@ from = "/equipe/arnaud-levy/actualites/"
 to = "/equipe/arnaud-levy/publications/"
 
 [[redirects]]
-from = "/publications/2026-04-21-bourse-noesya/"
+from = "/publications/2026-04-21-bourse-noesya"
 to = "/publications/2026-04-21-programme-noesya/"
 
 [[redirects]]

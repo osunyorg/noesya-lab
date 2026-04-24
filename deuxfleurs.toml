@@ -15,70 +15,70 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/publications/2022-05-09-qualite-frontend-a-la-recherche-du-aaa/index.html"
+from = "/publications/2022-05-09-qualite-frontend-a-la-recherche-du-aaa/"
 to = "/publications/2022-05-09-qualite-frontend/"
 
 [[redirects]]
-from = "/actualites/2023-05-04-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/index.html"
+from = "/actualites/2023-05-04-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/"
 to = "/publications/2022-02-01-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/"
 
 [[redirects]]
-from = "/equipe/arnaud-levy/actualites/index.html"
+from = "/equipe/arnaud-levy/actualites/"
 to = "/equipe/arnaud-levy/publications/"
 
 [[redirects]]
-from = "/publications/2026-04-21-bourse-noesya/index.html"
+from = "/publications/2026-04-21-bourse-noesya/"
 to = "/publications/2026-04-21-programme-noesya/"
 
 [[redirects]]
-from = "/equipe/olivia-simonet/actualites/index.html"
+from = "/equipe/olivia-simonet/actualites/"
 to = "/equipe/olivia-simonet/publications/"
 
 [[redirects]]
-from = "/actualites/masterclass/index.html"
+from = "/actualites/masterclass/"
 to = "/publications/masterclass/"
 
 [[redirects]]
-from = "/actualites/points-de-vue/index.html"
+from = "/actualites/points-de-vue/"
 to = "/publications/points-de-vue/"
 
 [[redirects]]
-from = "/actualites/2023-05-05-archives-wordpress-open-data/index.html"
+from = "/actualites/2023-05-05-archives-wordpress-open-data/"
 to = "/publications/2023-05-05-archives-wordpress-open-data/"
 
 [[redirects]]
-from = "/publications/2023-05-09-qualite-frontend/index.html"
+from = "/publications/2023-05-09-qualite-frontend/"
 to = "/publications/2022-05-09-qualite-frontend/"
 
 [[redirects]]
-from = "/publications/2023-11-01-noesya-b-corp-et-cest-pas-top/index.html"
+from = "/publications/2023-11-01-noesya-b-corp-et-cest-pas-top/"
 to = "/publications/2023-11-01-nous-sommes-b-corp-et-c-est-pas-top/"
 
 [[redirects]]
-from = "/actualites/2022-02-01-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/index.html"
+from = "/actualites/2022-02-01-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/"
 to = "/publications/2022-02-01-bilan-de-la-masterclass-experiences-interactives-et-sobriete-numerique-lab-noesya/"
 
 [[redirects]]
-from = "/actualites/index.html"
+from = "/actualites/"
 to = "/publications/"
 
 [[redirects]]
-from = "/actualites/2022-02-01-experiences-interactives-et-sobriete-numerique/index.html"
+from = "/actualites/2022-02-01-experiences-interactives-et-sobriete-numerique/"
 to = "/publications/2022-02-01-experiences-interactives-et-sobriete-numerique/"
 
 [[redirects]]
-from = "/actualites/2023-05-05-confiance-et-publics/index.html"
+from = "/actualites/2023-05-05-confiance-et-publics/"
 to = "/publications/2022-05-24-confiance-et-publics/"
 
 [[redirects]]
-from = "/publications/2023-05-09-qualite-frontend-a-la-recherche-du-aaa/index.html"
+from = "/publications/2023-05-09-qualite-frontend-a-la-recherche-du-aaa/"
 to = "/publications/2022-05-09-qualite-frontend/"
 
 [[redirects]]
-from = "/actualites/2022-05-24-confiance-et-publics/index.html"
+from = "/actualites/2022-05-24-confiance-et-publics/"
 to = "/publications/2022-05-24-confiance-et-publics/"
 
 [[redirects]]
-from = "/actualites/rd/index.html"
+from = "/actualites/rd/"
 to = "/publications/rd/"
 

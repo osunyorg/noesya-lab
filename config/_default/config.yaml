@@ -1,6 +1,10 @@
 theme: noesya-hugo-theme
 _merge: deep
 params:
+  default:
+    index:
+      taxonomies:
+        display: false
   ecosystem: lab
   posts:
     date_format: "2006"
@@ -23,10 +27,12 @@ params:
           taxonomies: false
           updated_at: false
           with_labels: false
-      taxonomies: # for organizations, persons, events and exhibitions (to be removed with meta)
-        position: content # content | hero | none
-        show_name: true
-  default:
-    index:
-      taxonomies:
-        display: false
+  share_links:
+    enabled: true
+    email: true
+    facebook: false
+    linkedin: true
+    mastodon: true
+    telegram: true
+    twitter: false
+    whatsapp: true

@@ -1,16 +1,23 @@
 .posts__page 
     header.hero
-        .post-categories
-            @include list-reset
-            li 
-                margin-left: 0
-            a
-                @include h1
-                color: var(--color-text-alt)
-                text-decoration: none
-        .hero-text
-            margin-top: 0
-            width: auto
+        .container--category
+            @include media-breakpoint-up(desktop)
+                padding-top: $spacing-5
+            .post-categories
+                margin-top: $spacing-5 !important
+                @include list-reset
+                li 
+                    margin-left: 0
+                a
+                    @include h1
+                    color: var(--color-text-alt)
+                    text-decoration: none
+            + .container
+                .content
+                    padding-top: 0
+                    .hero-text
+                        margin-top: 0
+                        width: auto
 
 .posts
     .post

@@ -9,7 +9,24 @@ params:
       options:
         categories: false
         image: false
+        subtitle: false
         summary: false
     single:
-      summary:
-        position: content
+      meta:
+        position: hero
+        options:
+          authors: true
+          dates: true
+          published_at: true
+          reading_time: false
+          share: true
+          taxonomies: false
+          updated_at: false
+          with_labels: false
+      taxonomies: # for organizations, persons, events and exhibitions (to be removed with meta)
+        position: content # content | hero | none
+        show_name: true
+  default:
+    index:
+      taxonomies:
+        display: false

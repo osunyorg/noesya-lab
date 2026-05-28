@@ -1,0 +1,8 @@
+{{ if .context.Params.posts_categories }}
+  <div class="container container--category">
+    {{ partial "commons/categories" (dict
+      "context" .context
+      "kind" "post"
+    ) }}
+  </div>
+{{ end }}

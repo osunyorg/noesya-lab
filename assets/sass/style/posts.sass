@@ -1,5 +1,12 @@
 .posts__page 
     header.hero
+        @include media-breakpoint-up(desktop)
+            .container
+                .content
+                    .hero-text
+                        width: 100%
+                    p
+                        width: columns(8)
         .container--category
             @include media-breakpoint-up(desktop)
                 padding-top: $spacing-5
@@ -26,7 +33,11 @@
         time
             padding-top: space(4)
             @include body-text
-
+    &--list
+        article
+            .post-content
+                @include in-page-without-sidebar
+                    width: columns(11)
 .block-testimonials
     @include in-page-with-sidebar
         .testimonials

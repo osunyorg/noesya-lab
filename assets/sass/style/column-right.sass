@@ -14,7 +14,7 @@
                 h2
                     padding-left: 0 !important
                     width: columns(8)
-        .post-sidebar
+        .section-sidebar
             margin-right: grid-external-space()
             right: 0
             left: unset
@@ -25,10 +25,11 @@
                 .toc-container
                     height: unset
                     position: sticky
-                    top: calc(#{$spacing-5} + #{$spacing-3})
                     transition: top .3s
                 .toc-content
                     padding-bottom: 0
+                    top: calc(#{$spacing-5} + #{$spacing-3}) !important
+
             // Remove categories
             .post-infos
                 > li:first-of-type

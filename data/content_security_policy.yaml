@@ -15,6 +15,6 @@ allowed_domains:
   - "vimeo.com"
   - "player.vimeo.com"
   - "vumbnail.com"
-  - "trampolinedemo.netlify.app"
-  - "app.cal.com"
   - "grist.liiib.re"
+  - "app.cal.com"
+  - "trampolinedemo.netlify.app"

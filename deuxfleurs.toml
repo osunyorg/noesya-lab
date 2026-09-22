@@ -47,6 +47,10 @@ from = "/actualites/2023-05-05-archives-wordpress-open-data/index.html"
 to = "/publications/2023-05-05-archives-wordpress-open-data/"
 
 [[redirects]]
+from = "/organisations/categories/clients/index.html"
+to = "/organisations/categories/client/"
+
+[[redirects]]
 from = "/publications/2023-05-09-qualite-frontend/index.html"
 to = "/publications/2022-05-09-qualite-frontend/"
 

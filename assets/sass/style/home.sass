@@ -1,11 +1,15 @@
-.page__home main
-    padding-bottom: 130px
-    background:
-        image: url("/assets/images/crop.png")
-        position: 85% bottom
-        repeat: no-repeat
+.page__home 
+    main
+        padding-bottom: 130px
+        background:
+            image: url("/assets/images/crop.png")
+            position: 85% bottom
+            repeat: no-repeat
     @include media-breakpoint-up(desktop)
-        background-attachment: fixed
+        main
+            background-attachment: fixed
+        .document-content
+            min-height: unset
         .hero
             .content
                 .hero-text

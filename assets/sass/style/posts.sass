@@ -1,17 +1,19 @@
-.posts__page 
+// header.hero
+//     .post-categories
+//         margin-top: $spacing-5
+
+//     @include media-breakpoint-up(desktop)
+//         .content > .hero-text
+//             padding-top: 0
+//             width: columns(8)
+
+.posts__page
     header.hero
-        @include media-breakpoint-up(desktop)
-            .container
-                .content
-                    .hero-text
-                        width: 100%
-                    // p
-                    //     width: columns(8)
-        .container--category
-            @include media-breakpoint-up(desktop)
-                padding-top: $spacing-5
+        .hero-text
+            display: flex
+            flex-direction: column
             .post-categories
-                margin-top: $spacing-5 !important
+                order: -1
                 @include list-reset
                 li 
                     margin-left: 0
@@ -19,11 +21,14 @@
                     @include h1
                     color: var(--color-text-alt)
                     text-decoration: none
+        @include media-breakpoint-up(desktop)
+            .container
+                .content
+                    .hero-text
+                        width: 100%
             + .container
                 .content
-                    padding-top: 0
                     .hero-text
-                        margin-top: 0
                         width: auto
 
 .posts
@@ -38,6 +43,7 @@
             .post-content
                 @include in-page-without-sidebar
                     width: columns(11)
+
 .block-testimonials
     @include in-page-with-sidebar
         .testimonials
@@ -45,6 +51,7 @@
                 figure.with-picture
                     figcaption
                         margin-left: 0 !important
+
 // .block-class-list
 //     ul
 //         padding-left: 0

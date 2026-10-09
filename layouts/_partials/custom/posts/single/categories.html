@@ -1,0 +1,6 @@
+{{ if .Params.posts_categories }}
+  {{ partial "commons/categories" (dict
+    "context" .
+    "kind" "post"
+  ) }}
+{{ end }}

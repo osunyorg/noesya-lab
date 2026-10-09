@@ -1,5 +1,6 @@
-header#document-header 
+header#document-header
     .logo
         align-items: center
-
-
+    html.has-menu-sticky:not(.is-scrolling-down) &
+        @include media-breakpoint-down(desktop)
+            background-color: var(--color-background)

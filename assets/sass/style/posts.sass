@@ -51,6 +51,17 @@
                 figure.with-picture
                     figcaption
                         margin-left: 0 !important
+.block-features
+    &--list
+        @include in-page-with-sidebar
+            .features
+                .feature
+                    .feature-content
+                        .name
+                            @include h4
+                            width: columns(3) !important
+                        .feature-description
+                            width: columns(5) !important
 
 // .block-class-list
 //     ul
